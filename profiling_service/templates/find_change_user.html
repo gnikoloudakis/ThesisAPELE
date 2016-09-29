@@ -1,0 +1,76 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Find Change Users{% endblock %}
+
+{% block sidabartitlelink %}"/users/limited"{% endblock %}
+{% block SideBarTitle %}Find Change Users{% endblock %}
+
+{% block titlelink %}"/users/limited"{% endblock %}
+{% block maintitle %}Find Change Users{% endblock %}
+
+{% block LOGIN %}
+{#    <li><a href="/logout">{{ login }}</a></li>#}
+{% endblock %}
+
+
+
+{% block ListItems %}
+{#    <li><a href="/users/full">Full Profile</a></li>#}
+{#    <li><a href="/users/limited">Limited Profile</a></li>#}
+{#    <li><a href="/users/edit_profile">Edit My Profile</a></li>#}
+{#    {% if users.roles[0].name == 'admin' %}#}
+{#        <li><a href="/users/find_change">Find - Edit Users</a></li>#}
+{#    {% endif %}#}
+{#    <li><a href="/users/alerts">Alerts</a></li>#}
+
+{% endblock %}
+
+
+{% block avatar %}
+    {{ users.email | gravatar }}
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." id="search_input">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="search_btn">Search!</button>
+      </span>
+    </div><!-- /input-group -->
+
+    <br>
+    <div class="container">
+        <ul class="list-group" id="user_list">
+            {# spawn search results  #}
+        </ul>
+    </div>
+
+{% endblock %}
+
+
+
+{#      MAP BLOCK     #}
+{% block map %}
+{% endblock %}
+
+
+{#    JAVASCRIPT BLOCK#}
+{% block javascript %}
+    <script type="text/javascript">
+        $('#search_btn').click(function () {
+            $.post("{{ url_for('search_user') }}", {search_text: $("#search_input").val()}, function (response) {
+                data = JSON.parse(response);
+                {#                alert(data[1]["email"])#}
+                $("#user_list").empty();
+                for (let i = 0; i < data.length; i++) {
+                    var link = "/change_user/" + data[i]["email"];
+                    {#                    var link = {{ url_for('change_user_profile', user_email = data[i]["email"]) }}#}
+                    $("#user_list").append("<li><a href=" + link + "><h4>" + data[i]["email"] + "</h4></a></li>")
+                }
+            })
+        });
+    </script>
+{% endblock %}
+                      

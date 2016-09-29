@@ -1,0 +1,30 @@
+{
+    "_id" : ObjectId("570fa6cee609a80520bd2e7e"),
+    "first_name" : "yannis",
+    "last_name" : "nikoloud",
+    "username" : "yannis",
+    "password" : "spacegr",
+    "medical_situation" : {},
+    "user_state" : "safe",
+    "position" : [ 
+        -32, 
+        151.3
+    ],
+    "medical_history" : [ 
+        {
+            "date" : ISODate("2016-04-14T17:18:54.108Z"),
+            "hospital" : "Pepagni",
+            "doctor" : "Dr Kuthropalli",
+            "reason" : "check Up",
+            "outcome" : "Patient is Healthy"
+        }, 
+        {
+            "date" : ISODate("2016-05-14T17:18:54.108Z"),
+            "hospital" : "Venizelio",
+            "doctor" : "Dr Markakis",
+            "reason" : "check Up",
+            "outcome" : "Patient is not Healthy"
+        }
+    ],
+    "date_created" : ISODate("2016-04-15T00:34:20.201Z")
+}

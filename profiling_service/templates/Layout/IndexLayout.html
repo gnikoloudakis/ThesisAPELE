@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block pagetitle %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    {#    <link rel="stylesheet" href="../../static/css/bootstrap.css">#}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    {#    <script src="../../static/js/bootstrap.js"></script>#}
+
+    {#BOOTSTRAP#}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+    {#MAPS AND LOCATION#}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAyeOvQsvoNanKXf2MS8PmiHKDK-xOdVg"></script>
+    <script type="text/javascript" src="../../static/js/maps.js"></script>
+
+    {#SIDEBAR CSS#}
+    <link rel="stylesheet" href="../../static/css/sidebar.css">
+
+    {# DATETIME PICKER#}
+    <script type="text/javascript" src="/static/datetimepicker/js/bootstrap-datetimepicker.js"
+            charset="UTF-8"></script>
+
+    {#EDITABLE TABLES#}
+
+    <link rel='stylesheet prefetch'
+          href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+    {#    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>#}
+
+    <link rel="stylesheet" href="/static/tables/css/style.css">
+    {#<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>#}
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    {#<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>#}
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js'></script>
+
+    {#FILEPICKER#}
+    <script type="text/javascript" src="/static/filepicker/bootstrap-filestyle.min.js"></script>
+
+    {% block head %}{% endblock %}
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+    <!-- SideBar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href={% block sidabartitlelink %}{% endblock %}>
+                    {#                    <img src="http://www.careerpilot.org.uk/images/profile-icon-lrg.png"#}
+                    {#                         alt="User Avatar" class="img-circle" width="50" height="50"/>#}
+                    <img src="{% block avatar %}{% endblock %}"
+                         alt="User Avatar" class="img-circle" width="50" height="50"/>
+                    {% block SideBarTitle %}{% endblock %}
+                </a>
+            </li>
+            {% if current_user.is_authenticated %}
+
+                <li><a href="/settings">General Settings</a></li>
+                <li><a href="/users/full">My Full Profile</a></li>
+                <li><a href="/users/limited">My Limited Profile</a></li>
+                <li><a href="/users/edit_profile">Edit My Profile</a></li>
+                <li><a href="/change">Change Password</a></li>
+                {% if current_user.roles[0].name == 'admin' %}
+                    <li><a href="/users/find_change">Find - Edit Users</a></li>
+                    <li><a href="/users/alerts">Alerts
+                        {% if alert|count > 0 %}
+                            <span class="badge badge-notify" style="background:#ff574b">{{ alert|count }}</span>
+                            {#                    {% else %}#}
+                            {#                        den evrika#}
+                        {% endif %}
+                    </a></li>
+                {% endif %}
+
+            {% else %}
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/init_db">Init DB</a></li>
+            {% endif %}
+
+
+            {% block ListItems %}
+
+            {% endblock %}
+
+
+        </ul>
+    </div>
+
+    <!-- page Content -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href={% block titlelink %}{% endblock %}>
+                    <span class="glyphicon glyphicon-th-list" id="menu-toggle"></span>
+                    {% block maintitle %}{% endblock %}
+
+
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                {#                <li><a href="#" data-toggle="modal" data-target="#Loginwindow">LogIn</a></li>#}
+
+                {% if current_user.is_authenticated %}
+                    <li><a href="/logout">Log Out</a></li>
+                {% else %}
+                    <li><a href="/login">Log In</a></li>
+                {% endif %}
+                {% block LOGIN %}{% endblock %}
+
+            </ul>
+        </div>
+    </nav>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    {% block body %}{% endblock %}
+
+                </div>
+                <div class="col-lg-5">
+
+                    {% block map %}{% endblock %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% block javascript %}{% endblock %}
+
+<!-- Menu Toggle script -->
+<script>
+
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+</script>
+
+
+</body>
+</html>

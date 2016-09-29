@@ -1,0 +1,43 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Limited Profile{% endblock %}
+
+{% block sidabartitlelink %}"/users/limited"{% endblock %}
+{% block SideBarTitle %}Limited Profile{% endblock %}
+
+{% block titlelink %}"/users/limited"{% endblock %}
+{% block maintitle %}Limited Profile{% endblock %}
+
+{% block LOGIN %}
+{#    <li><a href="/logout">{{ login }}</a></li>#}
+{% endblock %}
+
+
+
+{% block ListItems %}
+{#    <li><a href="/users/full">Full Profile</a></li>#}
+{#    <li><a href="/users/limited">Limited Profile</a></li>#}
+{#    <li><a href="/users/edit_profile">Edit My Profile</a></li>#}
+{#    {% if users.roles[0].name == 'admin' %}#}
+{#        <li><a href="/users/find_change">Find - Edit User</a></li>#}
+{#    {% endif %}#}
+{#    <li><a href="/users/alerts">Alerts <span class="badge badge-notify">3</span></a></li>#}
+{% endblock %}
+
+{% block avatar %}
+    {{ users.email | gravatar }}
+{% endblock %}
+
+
+{% block body %}
+
+    welcome
+{% endblock %}
+{% block map %}
+
+{% endblock %}
+
+
+{% block javascript %}
+
+{% endblock %}

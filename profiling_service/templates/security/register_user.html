@@ -1,0 +1,39 @@
+{% extends 'Layout/IndexLayout.html' %}
+{% from "security/_macros.html" import render_field_with_errors, render_field %}
+{% include "security/_messages.html" %}
+{% block title %}Login{% endblock %}
+
+{% block LOGIN %}
+
+    <li><a href="/login">Log In</a></li>
+{% endblock %}
+
+{% block SideBarTitle %}Welcome{% endblock %}
+
+{% block ListItems %}
+{#    <li><a href="/">Home</a></li>#}
+{#    <li><a href="/register">Register</a></li>#}
+{% endblock %}
+
+{% block avatar %}
+        {{ 'hose.cuervo@gmail.com' | gravatar }}
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="col-md-4">
+            <h1>Register</h1>
+            <form action="{{ url_for_security('register') }}" method="POST" name="register_user_form">
+                {{ register_user_form.hidden_tag() }}
+                {{ render_field_with_errors(register_user_form.email, class="form-control", placeholder="Email") }}
+                {{ render_field_with_errors(register_user_form.password, class="form-control", placeholder="type password") }}
+                {% if register_user_form.password_confirm %}
+                    {{ render_field_with_errors(register_user_form.password_confirm, class="form-control", placeholder="retype password") }}
+                {% endif %}
+                {{ render_field(register_user_form.submit, class="btn btn-info") }}
+                {#                {% include "security/_menu.html" %}#}
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

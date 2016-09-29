@@ -1,0 +1,54 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}System Settings{% endblock %}
+
+{% block sidabartitlelink %}"/settings"{% endblock %}
+{% block SideBarTitle %}System Settings{% endblock %}
+
+{% block titlelink %}"/settings"{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block maintitle %}System Settings{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/logout">{{ login }}</a></li>#}
+{% endblock %}
+
+
+
+
+{% block ListItems %}
+
+
+{% endblock %}
+
+
+{% block avatar %}
+    {{ users.email | gravatar }}
+{% endblock %}
+
+
+{% block body %}
+
+    <form role="form" method="post" action="/settings/save_all">
+        <div class="form-group">
+            <br>
+
+            <label for="radius">Nearest Volunteer Radius (meters) :</label>
+            <input type="text" class="form-control" id="first" value="{{ settings.volunteer_radius }}" name="radius">
+            <br>
+        </div>
+        <button class="btn btn-primary" type="submit" id="export-btn">Save All</button>
+    </form>
+
+{% endblock %}
+
+
+{% block map %}
+
+{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Index {% endblock %}
+
+{% block sidabartitlelink %}"/positioning_service_index"{% endblock %}
+{% block SideBarTitle %}Index{% endblock %}
+
+{% block titlelink %}"/positioning_service_index"{% endblock %}
+{% block maintitle %}Index{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/login">{{ login }}</a></li>#}
+{% endblock %}
+
+
+{% block ListItems %}
+    <li><a href="/positioning_service_index">Home</a></li>
+    {#    <li><a href="/register">Register</a></li>#}
+{% endblock %}
+
+{% block body %}
+
+    <form role="form" method="post" action="/save_all">
+        <div class="form-group">
+            <label for="IP1">Profiling Service IP:</label>
+            <input type="text" class="form-control" id="IP1" value="{{ settings.profiling_service_ip }}"
+                   name="profiling_ip">
+            <br>
+            <label for="port1">Profiling Service Port:</label>
+            <input type="text" class="form-control" id="IP1" value="{{ settings.profiling_service_port }}"
+                   name="profiling_port">
+            <br>
+            <label for="IP2">Service Logic IP:</label>
+            <input type="text" class="form-control" id="IP2" value="{{ settings.service_logic_ip }}" name="logic_ip">
+            <br>
+            <label for="port2">Service Logic Port:</label>
+            <input type="text" class="form-control" id="port2" value="{{ settings.service_logic_port }}"
+                   name="logic_port">
+            <br>
+            <button class="btn btn-default" type="submit" id="export-btn">Save All</button>
+        </div>
+    </form>
+
+    <label for="log">Logs:</label>
+    <textarea class="form-control" rows="5" id="log" style="background-color: #0e0e0e; color: #00bb00"></textarea>
+
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script type="text/javascript">
+        var checkLog = setInterval(log, 10000);
+        function log() {
+            $.get('/service/get_log', function (data, status) {
+                {#alert("Data: " + data + "\nStatus: " + status);#}
+                document.getElementById("log").innerHTML = data;
+            });
+            {#var d = new Date();#}
+            {#document.getElementById("log").innerHTML = d.toLocaleTimeString();#}
+            document.getElementById("log").innerHTML = data.toString();
+        }
+    </script>
+{% endblock %}

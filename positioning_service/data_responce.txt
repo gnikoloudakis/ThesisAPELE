@@ -1,0 +1,11 @@
+data = {
+        "user": user,
+        "user-ip": ip,
+        "state": user_state,
+        "position":
+            {
+                "lat": user_location['location']['lat'],
+                "lng": user_location['location']['lng'],
+                "accuracy": user_location['accuracy']
+            }
+    }

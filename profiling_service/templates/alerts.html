@@ -1,0 +1,94 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Index {% endblock %}
+
+{% block sidabartitlelink %}"/"{% endblock %}
+{% block SideBarTitle %}Index{% endblock %}
+
+{% block titlelink %}"/"{% endblock %}
+{% block maintitle %}Index{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/login">{{ login }}</a></li>#}
+{% endblock %}
+
+
+{% block ListItems %}
+    {#    <li><a href="/">Home</a></li>#}
+    {#    <li><a href="/register">Register</a></li>#}
+    {#    <li><a href="/init_db">Init DB</a></li>#}
+{% endblock %}
+
+{% block avatar %}
+    {{ 'hose.cuervo@gmail.com' | gravatar }}
+{% endblock %}
+
+{% block body %}
+
+    {% for i in alert %}
+        {% set rowloop = loop %}
+        <a href="/amberalert/{{ i.unsafe_user.email }}"><h4>{{ i.unsafe_user.email }}</h4></a>
+        {#        <b>See Nearby Volunteers</b>#}
+        <button type="button" class="btn btn-info btn-sm" data-toggle="collapse"
+                data-target="#unsafe_user_{{ loop.index }}" id="show_details_{{ loop.index }}">
+            {#            <i class="glyphicon glyphicon-plus"></i>#}
+            See Nearby Volunteers
+        </button>
+        <button class="btn btn-info btn-sm" onclick="window.location.href='/change_user/{{ i.unsafe_user.email }}'">Edit Profile</button>
+        <div id="unsafe_user_{{ loop.index }}" class="collapse">
+            {#            <ul id="list_{{ loop.index }}"><h4>test</h4></ul>#}
+            <br>
+            <div id="map_{{ loop.index }}" style="width: 500px; height: 400px;"></div>
+            <br>
+
+
+        </div>
+
+    {% endfor %}
+    {#    <div id="map" style="width: 500px; height: 400px;"></div>#}
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript">
+
+        {% for i in alert %}
+            {% set rowloop = loop %}
+            var unsafe_user = {
+                first: '{{ i.unsafe_user.first_name }}',
+                last: '{{ i.unsafe_user.last_name }}',
+                email: '{{ i.unsafe_user.email }}'
+            };
+            unsafe_user_string = 'First Name: {{ i.unsafe_user.first_name }}\n ' + 'Last Name: {{ i.unsafe_user.last_name }}\n ' + 'Email: {{ i.unsafe_user.email }}';
+
+            $.ajax({
+                type: 'POST',
+                url: '/service/profiling/get_nearby_volunteers_simple',
+                data: unsafe_user,
+                success: function (responce) {
+                    {#                    alert(JSON.parse(responce)[0].email);#}
+                    var nearby_volunteers = JSON.parse(responce);
+                    var volunteer_locations = [];
+                    for (let i = 0; i < nearby_volunteers.length; i++) {
+                        volunteer_locations[i] = new Array(6);
+                        volunteer_locations[i][0] = nearby_volunteers[i].first_name;
+                        volunteer_locations[i][1] = nearby_volunteers[i].last_name;
+                        volunteer_locations[i][2] = nearby_volunteers[i].email;
+                        volunteer_locations[i][3] = nearby_volunteers[i].position['coordinates'][0];//longitude
+                        volunteer_locations[i][4] = nearby_volunteers[i].position['coordinates'][1];//latitude
+                        volunteer_locations[i][5] = {{ loop.index }};//latitude
+                    }
+                    $('#unsafe_user_{{ loop.index }}').on('shown.bs.collapse', function (e) {
+                        {#                        alert('collapsed');#}
+                        create_multimap(unsafe_user_string, {{ i.unsafe_user.position['coordinates'][0] }}, {{ i.unsafe_user.position['coordinates'][1] }}, volunteer_locations, 'map_{{ loop.index }}');
+                    });
+
+                },
+                error: function () {
+                    alert('error');
+                }
+            });
+
+        {% endfor %}
+
+    </script>
+{% endblock %}

@@ -1,0 +1,227 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Edit Profile{% endblock %}
+
+{% block sidabartitlelink %}"/users/limited"{% endblock %}
+{% block SideBarTitle %}Edit Profile{% endblock %}
+
+{% block titlelink %}"/users/limited"{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block maintitle %}Edit Profile{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/logout">{{ login }}</a></li>#}
+{% endblock %}
+
+
+
+
+{% block ListItems %}
+    {#    <li><a href="/users/full">Full Profile</a></li>#}
+    {#    <li><a href="/users/limited">Limited Profile</a></li>#}
+    {#    <li><a href="/users/edit_profile">Edit My Profile</a></li>#}
+    {#    <li><a href="/change">Change Password</a></li>#}
+    {#    {% if users.roles[0].name == 'admin' %}#}
+    {#    <li><a href="/users/find_change">Find - Edit Users</a></li>#}
+    {#    {% endif %}#}
+    {#    <li><a href="/users/change">Change Password</a></li>#}
+    {##}
+    {#    <li><a href="/users/alerts">Alerts <span class="badge badge-notify">3</span></a></li>#}
+
+
+{% endblock %}
+
+
+{% block avatar %}
+    {{ users.email | gravatar }}
+{% endblock %}
+
+
+{% block body %}
+
+    <h2>{{ users.first_name }} {{ users.last_name }}: Edit Profile</h2>
+    <p> Here you edit your profile</p>
+    <form role="form" method="post" action="/change_user/save_all">
+        <div class="form-group">
+
+            <label for="lat">Latitude:</label>
+            <input type="text" class="form-control" id="lat" value="{{ users.position.coordinates[1] }}" name="lat">
+            <br>
+            <label for="long">Longitude:</label>
+            <input type="text" class="form-control" id="long" value="{{ users.position.coordinates[0] }}" name="long">
+            <br>
+
+            <label for="first">First Name:</label>
+            <input type="text" class="form-control" id="first" value="{{ users.first_name }}" name="first">
+            <br>
+            <label for="last">Last Name:</label>
+            <input type="text" class="form-control" id="last" value="{{ users.last_name }}" name="last">
+            <br>
+            <label for="mail">E-Mail:</label>
+            <input type="text" class="form-control" id="mail" value="{{ users.email }}" name="email" readonly>
+            <br>
+
+
+            <label for="dtp_input2">Date of Birth</label>
+            <div class="input-group date form_date " data-date="1970-01-01T00:00:00Z" data-date-format="dd-mm-yyyy"
+                 data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
+                <input class="form-control" size="55" type="text"
+                       value="{{ users.birth_date.day }}-{{ users.birth_date.month }}-{{ users.birth_date.year }}"
+                       readonly name="birth">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <input type="hidden" id="dtp_input2" value=""/><br/>
+
+            <label for="select1">User Role</label>
+            <select class="form-control" id="select1" name="role">
+                <option selected> {{ users.roles[0].name }} </option>
+                <option>
+                    {% if users.roles[0].name == 'admin' %}
+                        user
+                    {% elif users.roles[0].name == 'user' %}
+                        admin
+                    {% else %}
+                        user
+                    {% endif %}
+                </option>
+            </select>
+            <br>
+
+            {#                       if user is admin   these will NOT show                  #}
+            {#            {% if users.roles[0].name == 'user' %}#}
+{#            {% if users.user_type == 'user' %}#}
+                <label for="select1">Medical Situation</label>
+                <select class="form-control" id="select1" name="situation">
+                    <option selected> {{ users.medical_situation }} </option>
+                    <option>
+                        {% if users.medical_situation=='safe' %}
+                            unsafe
+                        {% else %}
+                            safe
+                        {% endif %}
+                    </option>
+                </select>
+                <br>
+
+{#            {% endif %}#}
+
+            {#        MEDICAL HISTORY TABLES #}
+            <div id="table" class="table-editable">
+                <span class="table-add glyphicon glyphicon-plus"></span>
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Hospital</th>
+                        <th>Doctor</th>
+                        <th>Reason</th>
+                        <th>Outcome</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    {% for i in users.medical_history %}
+                        {% set rowloop = loop %}
+                        <tr>
+                            <td contenteditable="true">{{ loop.index }}</td>
+                            <td contenteditable="true">{{ i.date.day }}-{{ i.date.month }}-{{ i.date.year }}</td>
+                            <td contenteditable="true">{{ i.hospital }}</td>
+                            <td contenteditable="true">{{ i.doctor }}</td>
+                            <td contenteditable="true">{{ i.reason }}</td>
+                            <td contenteditable="true">{{ i.outcome }}</td>
+                            <td>
+                                <span class="table-remove glyphicon glyphicon-remove"></span>
+                            </td>
+                            <td>
+                                <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                                <span class="table-down glyphicon glyphicon-arrow-down"></span>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <!-- This is our clonable table line -->
+                    <tr class="hide">
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true">1-1-2000</td>
+                        <td contenteditable="true">Stir Fry</td>
+                        <td contenteditable="true">Stir Fry</td>
+                        <td contenteditable="true">Stir Fry</td>
+                        <td contenteditable="true">Stir Fry</td>
+                        <td>
+                            <span class="table-remove glyphicon glyphicon-remove"></span>
+                        </td>
+                        <td>
+                            <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                            <span class="table-down glyphicon glyphicon-arrow-down"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            {#            <button id="export-btn" class="btn btn-primary">Export Data</button>#}
+            {#            <p id="export"></p>#}
+
+        </div>
+
+        <button class="btn btn-default" type="submit" id="export-btn">Save All</button>
+        {#                <button type="submit" id="export-btn" class="btn btn-default">Export Data</button>#}
+        {#                <p id="export" name="history"></p>#}
+        <input type="hidden" class="form-control" id="export2" name="history">
+    </form>
+    <br>
+
+
+{% endblock %}
+
+
+{% block map %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9" id="map">
+                <iframe class="embed-responsive-item">
+                    {#                                    src="http://maps.google.com/maps?q=12.927923,77.627108&z=15&output=embed"{#prepei na mpei to dynamic location tou user#}
+                </iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+
+
+
+
+
+    <script>
+
+        var user_location = [{% if users.position %}{{ users.position['coordinates'][1] }}, {{ users.position['coordinates'][0] }}{% else %}35.00, 25.00{% endif %}];
+        {# lat long #}
+        create_map(user_location);
+        set_user_marker(user_location, {{ users.accuracy }});
+        {#        set_markers({{ aaaa }});#}
+
+
+
+
+        {#  Date Time Picker   #}
+
+        $('.form_date').datetimepicker({
+            {#            language: 'en',#}
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+
+
+    </script>
+
+    <script src="/static/tables/js/index.js"></script>
+
+
+{% endblock %}
+                      

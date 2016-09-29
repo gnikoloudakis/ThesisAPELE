@@ -1,0 +1,100 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Index {% endblock %}
+
+{% block sidabartitlelink %}"/"{% endblock %}
+{% block SideBarTitle %}Alert{% endblock %}
+
+{% block titlelink %}"/"{% endblock %}
+{% block maintitle %}Alert{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/login">{{ login }}</a></li>#}
+{% endblock %}
+
+
+{% block ListItems %}
+    {#    <li><a href="/">Home</a></li>#}
+    {#    <li><a href="/register">Register</a></li>#}
+    {#    <li><a href="/init_db">Init DB</a></li>#}
+{% endblock %}
+
+{% block avatar %}
+    {{ 'hose.cuervo@gmail.com' | gravatar }}
+{% endblock %}
+
+{% block body %}
+    <div class="col-lg-6">
+        <div class="embed-responsive embed-responsive-4by3" id="image">
+            <img src="/static/images/old_2.jpg"
+                 class="img-responsive" width="250" height="350"/>
+        </div>
+
+
+        <h4><b>First Response Information</b>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#response"><i
+                    class="glyphicon glyphicon-plus"></i>
+            </button>
+        </h4>
+        <div id="response" class="collapse">
+            <h4>{{ user.first_response_info }}</h4>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h4><b>First Name:</b> {{ user.first_name }}</h4>
+        <h4><b>Last Name:</b> {{ user.last_name }}</h4>
+        <h4><b>Age:</b> {{ user.age }}</h4>
+        <h4><b>Current Position:</b> <br>Lat:
+            {% if user.position.coordinates %}{{ user.position['coordinates'][1] }}{% else %}35.00{% endif %},<br> Long:
+            {% if user.position.coordinates %}{{ user.position['coordinates'][0] }}{% else %}25.00{% endif %}</h4>
+        <h4><b>Volunteer Radius:</b> 5km</h4>
+        <br><br><br>
+
+
+        <h4><b>Nearby Volunteers</b>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#volunteers"><i
+                    class="glyphicon glyphicon-plus"></i>
+            </button>
+        </h4>
+        <div id="volunteers" class="collapse">
+            {% for i in volunteers %}
+                <h4>{{ i.first_name }} {{ i.last_name }} {{ i.position['coordinates'][1] }} {{ i.position['coordinates'][0] }}</h4>
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+
+
+{% block map %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9" id="map">
+                <iframe class="embed-responsive-item">
+                    {#                                    src="http://maps.google.com/maps?q=12.927923,77.627108&z=15&output=embed"{#prepei na mpei to dynamic location tou user#}
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+{#    <h4><b>Serving PSAP:</b> sip:psap_rethymnon@nikoloudakis.rethymnon.com</h4>#}
+    <h4><b>Emergency Number:</b> 112</h4>
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script>
+
+        var user_location = [{% if user.position %}{{ user.position['coordinates'][1] }}, {{ user.position['coordinates'][0] }}{% else %}35.00, 25.00{% endif %}];
+        create_map(user_location);
+        set_user_marker(user_location, {{ users.accuracy }});
+        {#        set_markers({{ aaaa }});#}
+    </script>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Index {% endblock %}
+
+{% block sidabartitlelink %}"/service_logic_index"{% endblock %}
+{% block SideBarTitle %}Index{% endblock %}
+
+{% block titlelink %}"/service_logic_index"{% endblock %}
+{% block maintitle %}Index{% endblock %}
+
+{% block LOGIN %}
+    {#    <li><a href="/login">{{ login }}</a></li>#}
+{% endblock %}
+
+
+{% block ListItems %}
+    <li><a href="/service_logic_index">Home</a></li>
+    {#    <li><a href="/register">Register</a></li>#}
+{% endblock %}
+
+{% block body %}
+
+    <form role="form" method="post" action="/save_all">
+        <div class="form-group">
+            <label for="IP1">Profiling Service IP:</label>
+            <input type="text" class="form-control" id="IP1" value="{{ settings.profiling_service_ip }}"
+                   name="profiling_ip">
+            <br>
+            <label for="port1">Profiling Service Port:</label>
+            <input type="text" class="form-control" id="IP1" value="{{ settings.profiling_service_port }}"
+                   name="profiling_port">
+            <br>
+            <label for="IP2">Lost Server IP:</label>
+            <input type="text" class="form-control" id="IP2" value="{{ settings.lost_server_ip }}" name="lost_ip">
+            <br>
+            <label for="port2">Lost Server Port:</label>
+            <input type="text" class="form-control" id="port2" value="{{ settings.lost_server_port }}" name="lost_port">
+            <br>
+            <button class="btn btn-default" type="submit" id="export-btn">Save All</button>
+        </div>
+    </form>
+    <label for="log">Logs:</label>
+    <textarea class="form-control" rows="5" id="log" style="background-color: #0e0e0e; color: #00bb00"></textarea>
+
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script type="text/javascript">
+        var checkLog = setInterval(log, 10000);
+        function log() {
+            $.get('/service/get_log', function (data, status) {
+                {#alert("Data: " + data + "\nStatus: " + status);#}
+                document.getElementById("log").innerHTML = data;
+            });
+            {#var d = new Date();#}
+            {#document.getElementById("log").innerHTML = d.toLocaleTimeString();#}
+            document.getElementById("log").innerHTML = data.toString();
+        }
+    </script>
+{% endblock %}

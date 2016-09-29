@@ -1,0 +1,29 @@
+{
+	"user": "giannis.nikoloudakis@gmail.com",
+    "RSSI":-96,
+    "cellular": {
+	  "cellTowers": [
+		{
+		  "cellId": 33048340,
+		  "locationAreaCode": 3316,
+		  "mobileCountryCode": 202,
+		  "mobileNetworkCode": 1,
+		  "signalStrength": -95
+		},
+		{
+		  "cellId": 63159,
+		  "locationAreaCode": 321,
+		  "mobileCountryCode": 202,
+		  "mobileNetworkCode": 1,
+		  "signalStrength": -70
+		},
+		{
+		  "cellId": 18190,
+		  "locationAreaCode": 321,
+		  "mobileCountryCode": 202,
+		  "mobileNetworkCode": 1,
+		  "signalStrength": -60
+		}
+	  ]
+	}
+}

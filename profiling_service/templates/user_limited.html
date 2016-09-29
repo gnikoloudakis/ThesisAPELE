@@ -1,0 +1,107 @@
+{% extends 'Layout/IndexLayout.html' %}
+
+{% block pagetitle %}Limited Profile{% endblock %}
+
+{% block sidabartitlelink %}"/users/limited"{% endblock %}
+{% block SideBarTitle %}Limited Profile{% endblock %}
+
+{% block titlelink %}"/users/limited"{% endblock %}
+{% block maintitle %}Limited Profile{% endblock %}
+
+{% block LOGIN %}
+
+{#    <li><a href="/logout">{{ login }}</a></li>#}
+{% endblock %}
+
+
+
+{% block ListItems %}
+{#    <li><a href="/users/full">Full Profile</a></li>#}
+{#    <li><a href="/users/limited">Limited Profile</a></li>#}
+{#    <li><a href="/users/edit_profile">Edit My Profile</a></li>#}
+{#    {% if users.roles[0].name == 'admin' %}#}
+{#        <li><a href="/users/find_change">Find - Edit User</a></li>#}
+{#    {% endif %}#}
+{#        <li><a href="/users/alerts">Alerts <span class="badge badge-notify">3</span></a></li>#}
+
+{% endblock %}
+
+{% block avatar %}
+    {{ users.email | gravatar }}
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h4>{{ users.first_name }} {{ users.last_name }}</h4></div>
+        <div class="panel-body">
+            {#            <h4><b>User ID:</b> {{ users.get_id() }}</h4>#}
+            <h4><b>First Name:</b> {{ users.first_name }}</h4>
+            <h4><b>Last Name:</b> {{ users.last_name }}</h4>
+            {#            <h4><b>Username:</b> {{ users.username }}</h4>#}
+            {#            <h4><b>e-Mail:</b> {{ users.email }}</h4>#}
+            {#            <h4><b>User Type:</b> {{ users.user_type }}</h4>#}
+            <h4><b>Birth Date:</b> {{ users.birth_date.day }}-{{ users.birth_date.month }}-{{ users.birth_date.year }}
+            </h4>
+            {#            <h4><b>Age:</b> {{ users.age }}</h4>#}
+
+            {#            <h4><b>Date Created:</b> {{ users.date_created }}</h4>#}
+            {#            <h4><b>Active:</b> {{ users.is_active }}</h4>#}
+            {#            <h4><b>Medical History</b>#}
+            {#                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#history">details#}
+            {#                </button>#}
+            </h4>
+            <h4><b>Current Position:</b> Lat:
+                {% if users.position.coordinates %}{{ users.position['coordinates'][1] }}{% else %} 35.00 {% endif %},
+                Long:
+                {% if users.position.coordinates %}{{ users.position['coordinates'][0] }}{% else %} 25.00 {% endif %}
+            </h4>
+
+            {% if users.roles[0].name == 'user' %}
+
+                <h4 style="color: darkred"><b>User State:</b> {{ users.user_state }}</h4>
+                <div id="history" class="collapse">
+                    {% for i in users.medical_history %}
+                        <h4>{{ i.date }}</h4>
+                        <h5>Hospital: {{ i.hospital }}</h5>
+                        <h5>Doctor: {{ i.doctor }}</h5>
+                        <h5>Reason: {{ i.reason }}</h5>
+                        <h5>Outcome: {{ i.outcome }}</h5>
+                    {% endfor %}
+                </div>
+
+                <h4><b>First Response Information</b>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#response"><i
+                            class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </h4>
+                <div id="response" class="collapse">
+                    {{ users.first_response_info }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
+{% block map %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="embed-responsive embed-responsive-16by9" id="map">
+                <iframe class="embed-responsive-item">
+                    {#                                    src="http://maps.google.com/maps?q=12.927923,77.627108&z=15&output=embed"{#prepei na mpei to dynamic location tou user#}
+                </iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block javascript %}
+    <script>
+        var user_location = [{% if users.position %}{{ users.position['coordinates'][1] }}, {{ users.position['coordinates'][0] }}{% else %}35.00, 25.00{% endif %}];
+        create_map(user_location);
+        set_user_marker(user_location, {{ users.accuracy }});
+        {#        set_markers({{ aaaa }});#}
+    </script>
+{% endblock %}

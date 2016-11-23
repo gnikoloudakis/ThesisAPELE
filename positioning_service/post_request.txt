@@ -4,25 +4,25 @@
     "cellular": {
 	  "cellTowers": [
 		{
-		  "cellId": 33048340,
-		  "locationAreaCode": 3316,
+		  "cellId": 64023,
+		  "locationAreaCode": 2316,
 		  "mobileCountryCode": 202,
 		  "mobileNetworkCode": 1,
 		  "signalStrength": -95
 		},
 		{
-		  "cellId": 63159,
-		  "locationAreaCode": 321,
+		  "cellId": 61355,
+		  "locationAreaCode": 2317,
 		  "mobileCountryCode": 202,
 		  "mobileNetworkCode": 1,
 		  "signalStrength": -70
 		},
 		{
-		  "cellId": 18190,
-		  "locationAreaCode": 321,
+		  "cellId": 61342,
+		  "locationAreaCode": 2316,
 		  "mobileCountryCode": 202,
 		  "mobileNetworkCode": 1,
-		  "signalStrength": -60
+		  "signalStrength": -850
 		}
 	  ]
 	}

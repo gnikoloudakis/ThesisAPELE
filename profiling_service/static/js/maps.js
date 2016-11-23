@@ -52,7 +52,7 @@ function set_markers(locations) {
     }
 }
 
-function create_multimap(unsafe_user, user_lng, user_lat, volunteer_list, map_id) {
+function create_multimap(unsafe_user, user_lng, user_lat, accuracy, volunteer_list, map_id) {
     var map, circle;
     map = new google.maps.Map(document.getElementById(map_id), {
         zoom: 10,
@@ -72,7 +72,7 @@ function create_multimap(unsafe_user, user_lng, user_lat, volunteer_list, map_id
     var center = new google.maps.LatLng(user_lat,user_lng)
     circle = new google.maps.Circle({
         center: center,
-        radius: 1000,
+        radius: parseFloat(accuracy),
         strokeColor: "#FF0000",
         strokeOpacity: 0.8,
         strokeWeight: 2,

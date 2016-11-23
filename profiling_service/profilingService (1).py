@@ -303,9 +303,16 @@ def search_user():
 @login_required
 def amberalert(user_email):
     alert = Alert.objects
+    radius = Settings.objects.first().volunteer_radius
+    unsafe_user_email = user_email
+    unsafe_user_lng = User.objects(email=unsafe_user_email).first().position['coordinates'][0]
+    unsafe_user_lat = User.objects(email=unsafe_user_email).first().position['coordinates'][1]
     # print(user_email)
     user = User.objects(email=user_email).first()
-    return render_template('amberalert.html', user=user, alert=alert)
+    volunteers = User.objects(user_type='volunteer',
+                              position__near=[unsafe_user_lng, unsafe_user_lat],
+                              position__max_distance=int(radius))
+    return render_template('amberalert.html', user=user, alert=alert, volunteers=volunteers)
 
 
 @app.route('/change_user/<user_email>')

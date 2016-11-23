@@ -135,6 +135,7 @@ def service_logic():
     create_lost_request(data)
     # print(fp)
     # print(lp)
+    print('Volunteers:\n')
     for i in nu:
         print('Last Name: ', i['last_name'])
         LogFile.append(i['last_name'])

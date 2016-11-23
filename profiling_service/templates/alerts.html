@@ -58,7 +58,10 @@
                 last: '{{ i.unsafe_user.last_name }}',
                 email: '{{ i.unsafe_user.email }}'
             };
-            unsafe_user_string = 'First Name: {{ i.unsafe_user.first_name }}\n ' + 'Last Name: {{ i.unsafe_user.last_name }}\n ' + 'Email: {{ i.unsafe_user.email }}';
+            unsafe_user_string = 'First Name: {{ i.unsafe_user.first_name }}\n '
+                    + 'Last Name: {{ i.unsafe_user.last_name }}\n '
+                    + 'Email: {{ i.unsafe_user.email }}'
+                    + 'Accuracy: {{ i.unsafe_user.accuracy }}m' ;
 
             $.ajax({
                 type: 'POST',
@@ -79,7 +82,10 @@
                     }
                     $('#unsafe_user_{{ loop.index }}').on('shown.bs.collapse', function (e) {
                         {#                        alert('collapsed');#}
-                        create_multimap(unsafe_user_string, {{ i.unsafe_user.position['coordinates'][0] }}, {{ i.unsafe_user.position['coordinates'][1] }}, volunteer_locations, 'map_{{ loop.index }}');
+                        create_multimap(unsafe_user_string, {{ i.unsafe_user.position['coordinates'][0] }}, {{ i.unsafe_user.position['coordinates'][1] }}, {{ i.unsafe_user.accuracy }},
+                                volunteer_locations, 'map_{{ loop
+                        .index
+                        }}');
                     });
 
                 },

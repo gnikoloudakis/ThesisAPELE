@@ -2,6 +2,9 @@
 
 from flask.exthook import ExtDeprecationWarning
 import warnings
+
+from requests import ConnectionError
+
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask import Flask, request, json, render_template, redirect
 import requests, xml.etree.ElementTree as ET

@@ -130,7 +130,7 @@ def positioning_service_index():
     return render_template('index.html', settings=settings)
 
 
-@app.route('/save_all', methods=['POST'])
+@app.route('/positioning_service_index/save_all', methods=['POST'])
 def save_all():
     # global pos_srvc_port
     # pos_srvc_port = request.form['positioning_port']

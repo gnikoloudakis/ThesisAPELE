@@ -151,7 +151,7 @@ def save_all():
     return redirect('/positioning_service_index')
 
 
-@app.route('/service/positioning', methods=['POST'])
+@app.route('/service/positioning_app', methods=['POST'])
 def positioning():
     LogFile = ' '
     data = request.data

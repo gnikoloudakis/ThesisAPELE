@@ -109,7 +109,7 @@ def service_logic_index():
     return render_template('index.html', settings=settings)
 
 
-@app.route('/save_all', methods=['POST'])
+@app.route('/service_logic_index/save_all', methods=['POST'])
 def save_all():
     global pr_srvc_ip
     pr_srvc_ip = request.form['profiling_ip']

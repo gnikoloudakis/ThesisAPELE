@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f79458-d2a0-435a-8ba8-b48e48dd8541" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/positioning_service.iml" afterPath="$PROJECT_DIR$/.idea/positioning_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/positioning_service.py" afterPath="$PROJECT_DIR$/positioning_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/misc.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/service_logic.iml" afterPath="$PROJECT_DIR$/../service_logic/.idea/service_logic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/templates/index.html" afterPath="$PROJECT_DIR$/../service_logic/templates/index.html" />
     </list>
     <ignored path="positioning_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -433,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479909245149</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1/12/2016a">
+      <created>1480584224574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480584224574</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -479,7 +480,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="23/11/2016" />
     <MESSAGE value="23/11/2016a" />
-    <option name="LAST_COMMIT_MESSAGE" value="23/11/2016a" />
+    <MESSAGE value="1/12/2016a" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/12/2016a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

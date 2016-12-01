@@ -148,7 +148,7 @@ def save_all():
                     set__service_logic_ip=sl_ip,
                     set__service_logic_port=sl_port)
 
-    return redirect('/positioning_service_index')
+    return redirect('/')
 
 
 @app.route('/service/positioning_app', methods=['POST'])

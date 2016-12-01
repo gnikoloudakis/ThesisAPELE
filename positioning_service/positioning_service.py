@@ -25,7 +25,7 @@ db = MongoEngine(app)
 g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAAyeOvQsvoNanKXf2MS8PmiHKDK-xOdVg'
 times = 0
 state = 'IN'
-LogFile = ['-']
+LogFile = []
 
 
 class positioning_settings(db.Document):

@@ -124,13 +124,13 @@ def inform_logic(user_location, user_state, user, ip):  # port 6000
     return json.dumps(data)
 
 
-@app.route('/')
+@app.route('/positioning')
 def positioning_service_index():
     settings = positioning_settings.objects.first()
     return render_template('index.html', settings=settings)
 
 
-@app.route('/save_all', methods=['POST'])
+@app.route('/positioning/save_all', methods=['POST'])
 def save_all():
     # global pos_srvc_port
     # pos_srvc_port = request.form['positioning_port']
@@ -151,7 +151,7 @@ def save_all():
     return redirect('/')
 
 
-@app.route('/service/positioning_app', methods=['POST'])
+@app.route('/positioning/service/positioning_app', methods=['POST'])
 def positioning():
     LogFile = ' '
     data = request.data
@@ -167,7 +167,7 @@ def positioning():
     return ip
 
 
-@app.route('/service/get_log', methods=['GET'])
+@app.route('/positioning/service/get_log', methods=['GET'])
 def get_log():
     return json.dumps(LogFile)
 

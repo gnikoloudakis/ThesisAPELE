@@ -2,10 +2,10 @@
 
 {% block pagetitle %}Index {% endblock %}
 
-{% block sidabartitlelink %}"/positioning_service_index"{% endblock %}
+{% block sidabartitlelink %}"/positioning"{% endblock %}
 {% block SideBarTitle %}Index{% endblock %}
 
-{% block titlelink %}"/positioning_service_index"{% endblock %}
+{% block titlelink %}"/positioning"{% endblock %}
 {% block maintitle %}Index{% endblock %}
 
 {% block LOGIN %}
@@ -52,7 +52,7 @@
     <script type="text/javascript">
         var checkLog = setInterval(log, 10000);
         function log() {
-            $.get('/service/get_log', function (data, status) {
+            $.get('/positioning/service/get_log', function (data, status) {
                 {#alert("Data: " + data + "\nStatus: " + status);#}
                 document.getElementById("log").innerHTML = data;
             });

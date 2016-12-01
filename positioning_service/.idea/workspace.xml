@@ -32,11 +32,21 @@
       <file leaf-file-name="positioning_service.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/positioning_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="132" column="12" lean-forward="false" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+            <state relative-caret-position="436">
+              <caret line="134" column="26" lean-forward="true" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
               <folding>
                 <element signature="e#25#72#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -439,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480601822426</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1/12/2016 - changed /save_all">
+      <created>1480603174159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1480603174159</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +506,8 @@
     <MESSAGE value="1/12/2016b" />
     <MESSAGE value="1/12/2016 - changed static folder to /positioning_app/static" />
     <MESSAGE value="1/12/2016 - moved static folder to root folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/12/2016 - moved static folder to root folder" />
+    <MESSAGE value="1/12/2016 - changed /save_all" />
+    <option name="LAST_COMMIT_MESSAGE" value="1/12/2016 - changed /save_all" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -700,14 +718,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -716,10 +726,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/positioning_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="132" column="12" lean-forward="false" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+        <state relative-caret-position="436">
+          <caret line="134" column="26" lean-forward="true" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
           <folding>
             <element signature="e#25#72#0" expanded="true" />
           </folding>

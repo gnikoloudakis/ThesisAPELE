@@ -124,7 +124,7 @@ def inform_logic(user_location, user_state, user, ip):  # port 6000
     return json.dumps(data)
 
 
-@app.route('/positioning_service_index')
+@app.route('/')
 def positioning_service_index():
     settings = positioning_settings.objects.first()
     return render_template('index.html', settings=settings)

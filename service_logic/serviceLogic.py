@@ -103,13 +103,13 @@ def create_lost_request(data):
     LogFile.append('Emergency Number:' + lost_data[0][4].text)
 
 
-@app.route('/service_logic_index')
+@app.route('/logic')
 def service_logic_index():
     settings = service_logic_settings.objects.first()
     return render_template('index.html', settings=settings)
 
 
-@app.route('/service_logic_index/save_all', methods=['POST'])
+@app.route('/logic/save_all', methods=['POST'])
 def save_all():
     global pr_srvc_ip
     pr_srvc_ip = request.form['profiling_ip']
@@ -126,10 +126,10 @@ def save_all():
                     set__lost_server_ip=lost_ip,
                     set__lost_server_port=lost_port)
 
-    return redirect('/service_logic_index')
+    return redirect('/logic')
 
 
-@app.route('/service/service_logic', methods=['POST'])
+@app.route('/logic/service/service_logic', methods=['POST'])
 def service_logic():
     data = request.data
     fp = get_full_profile(data)
@@ -145,7 +145,7 @@ def service_logic():
     return 'ok'
 
 
-@app.route('/service/get_log', methods=['GET'])
+@app.route('/logic/service/get_log', methods=['GET'])
 def get_log():
     return json.dumps(LogFile)
 

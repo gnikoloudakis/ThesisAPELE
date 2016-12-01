@@ -117,7 +117,7 @@ def inform_logic(user_location, user_state, user, ip):  # port 6000
                 "accuracy": user_location['accuracy']
             }
     }
-    requests.post('http://' + sl_ip + ':' + sl_port + '/service/service_logic',
+    requests.post('http://' + sl_ip + ':' + sl_port + '/logic/service/service_logic',
                   data=json.dumps(data))  # localhost:8080/service/service_logic
     print("INFORMED SERVICE LOGIC")
     LogFile.append('INFORMED SERVICE LOGIC  ' + sl_ip + sl_port)

@@ -2,10 +2,10 @@
 
 {% block pagetitle %}Index {% endblock %}
 
-{% block sidabartitlelink %}"/service_logic_index"{% endblock %}
+{% block sidabartitlelink %}"/logic"{% endblock %}
 {% block SideBarTitle %}Index{% endblock %}
 
-{% block titlelink %}"/service_logic_index"{% endblock %}
+{% block titlelink %}"/logic"{% endblock %}
 {% block maintitle %}Index{% endblock %}
 
 {% block LOGIN %}
@@ -14,13 +14,13 @@
 
 
 {% block ListItems %}
-    <li><a href="/service_logic_index">Home</a></li>
+    <li><a href="/logic">Home</a></li>
     {#    <li><a href="/register">Register</a></li>#}
 {% endblock %}
 
 {% block body %}
 
-    <form role="form" method="post" action="/service_logic_index/save_all">
+    <form role="form" method="post" action="/logic/save_all">
         <div class="form-group">
             <label for="IP1">Profiling Service IP:</label>
             <input type="text" class="form-control" id="IP1" value="{{ settings.profiling_service_ip }}"
@@ -50,7 +50,7 @@
     <script type="text/javascript">
         var checkLog = setInterval(log, 10000);
         function log() {
-            $.get('/service/get_log', function (data, status) {
+            $.get('/logic/service/get_log', function (data, status) {
                 {#alert("Data: " + data + "\nStatus: " + status);#}
                 document.getElementById("log").innerHTML = data;
             });

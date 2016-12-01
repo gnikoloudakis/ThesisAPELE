@@ -1,193 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/Font_awsome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/css/sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/build/build.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/build/build_standalone.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/css/bootstrap-datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/bootstrap-datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/less/datetimepicker.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/minify.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_day.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_day_meridian.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_decade.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_full.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_hour.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_hour_meridian.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_month.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/screenshot/standard_year.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/_coverage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/coverage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/mock.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/qunit-logging.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/assets/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/run-qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/formats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/inline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/keyboard_navigation/2011.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/keyboard_navigation/2012.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/keyboard_navigation/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/mouse_navigation/2011.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/mouse_navigation/2012.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/mouse_navigation/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/suites/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/datetimepicker/tests/tests.min.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/images/brand-positioning.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/images/photo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/js/maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../positioning_service/static/tables/scss/style.scss" afterPath="" />
+    <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="1/12/2016 - f">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/positioning_service.py" afterPath="$PROJECT_DIR$/../positioning_service/positioning_service.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceLogic.py" afterPath="$PROJECT_DIR$/serviceLogic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -214,28 +35,28 @@
       <file leaf-file-name="serviceLogic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serviceLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
-              <caret line="111" column="32" lean-forward="false" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+            <state relative-caret-position="640">
+              <caret line="147" column="18" lean-forward="false" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+            <state relative-caret-position="884">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexLayout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexLayout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-748">
+              <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -255,8 +76,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/serviceLogic.py" />
-        <option value="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
       </list>
     </option>
   </component>
@@ -655,8 +476,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12953092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,26 +618,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serviceLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="111" column="32" lean-forward="false" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+        <state relative-caret-position="640">
+          <caret line="147" column="18" lean-forward="false" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="884">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
           <folding />
         </state>
       </provider>

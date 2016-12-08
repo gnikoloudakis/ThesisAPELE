@@ -3,6 +3,7 @@ import sys
 from flask import Flask, render_template, request, redirect, session, json, flash, url_for, jsonify, app
 from flask.exthook import ExtDeprecationWarning
 import warnings
+from apscheduler.schedulers.background import BackgroundScheduler
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask_mongoengine import MongoEngine
@@ -14,6 +15,8 @@ from werkzeug.utils import secure_filename
 from datetime import datetime, timedelta
 import os
 from pprint import pprint
+
+scheduler = BackgroundScheduler()
 
 # Create the APP
 app = Flask(__name__)
@@ -29,8 +32,7 @@ app.config['SECURITY_RECOVERABLE'] = True
 app.config['SECURITY_CHANGEABLE'] = True
 # app.config['SECURITY_PASSWORDLESS'] = True
 app.config['SECURITY_PASSWORD_HASH'] = 'sha512_crypt'
-app.config[
-    'SECURITY_PASSWORD_SALT'] = "dkljsarlh5oqy89n8y78cuiyweort/3.64,'32cq[ pltwp4[5tq,uwc p349cq nw78qqoq2y345qb5v"
+app.config['SECURITY_PASSWORD_SALT'] = "dkljsarlh5oqy89n8y78cuiyweort/3.64,'32cq[ pltwp4[5tq,uwc p349cq nw78qqoq2y345qb5v"
 
 # MongoDB config
 app.config['MONGODB_DB'] = 'apele_thesis'
@@ -498,4 +500,5 @@ def get_nearby_simple():
 
 if __name__ == '__main__':
     # app.run(port=8080)
+    scheduler.start()
     app.run(host='0.0.0.0', port=8080)

@@ -2,11 +2,16 @@
 
 from flask.exthook import ExtDeprecationWarning
 import warnings
+
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask import Flask, request, json, render_template, redirect
 import requests
 from flask_mongoengine import MongoEngine
-import os
+import os, datetime
+
+from apscheduler.schedulers.background import BackgroundScheduler
+
+scheduler = BackgroundScheduler()
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -23,7 +28,7 @@ app.config['MONGODB_PASSWORD'] = 'spacegr'
 db = MongoEngine(app)
 
 g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAAyeOvQsvoNanKXf2MS8PmiHKDK-xOdVg'
-times = 0
+times = 3
 state = 'IN'
 LogFile = []
 
@@ -36,6 +41,7 @@ class positioning_settings(db.Document):
 
     def __str__(self):
         return self.profiling_service_ip
+
 
 # pp = positioning_settings(profiling_service_ip='127.0.0.1')
 # pp.save()
@@ -163,7 +169,9 @@ def positioning():
     # print(rssipower)
     celldata = dataDict['cellular']
     # print(json.dumps(celldata))
-    define_position(rssipower, json.dumps(celldata), user, ip)
+    # define_position(rssipower, json.dumps(celldata), user, ip)
+    scheduler.add_job(define_position, 'date', next_run_time=datetime.datetime.now(), id='get_position_for' + user, args=[rssipower, json.dumps(celldata), user, ip])
+    # define_position(rssipower, json.dumps(celldata), user, ip)
     return ip
 
 
@@ -171,6 +179,8 @@ def positioning():
 def get_log():
     return json.dumps(LogFile)
 
+
 if __name__ == '__main__':
     # app.run(port=4000)
+    scheduler.start()
     app.run(host='0.0.0.0', port=8081)

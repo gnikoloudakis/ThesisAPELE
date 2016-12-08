@@ -4,15 +4,18 @@ from flask.exthook import ExtDeprecationWarning
 import warnings
 
 from requests import ConnectionError
-
+import logging
+from apscheduler.schedulers.background import BackgroundScheduler
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask import Flask, request, json, render_template, redirect
 import requests, xml.etree.ElementTree as ET
 from flask_mongoengine import MongoEngine
-import os
+import os, time, datetime
+
+logging.basicConfig(filename='/Users/yannis/Desktop/Pycharm_projects/Thesis/ThesisAPELE/service_logic/log.txt', filemode='w', level=logging.INFO)
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 app.config['SECRET_KEY'] = os.urandom(16)
 
 
@@ -23,12 +26,18 @@ app.config['MONGODB_PORT'] = 11495
 app.config['MONGODB_USERNAME'] = 'yannis'
 app.config['MONGODB_PASSWORD'] = 'spacegr'
 
+
+scheduler = BackgroundScheduler()
+
 # Create database connection object
 db = MongoEngine(app)
 
+time_started = 0
+time_for_volunteers = 0
+time_for_psap = 0
 
 LogFile = []
-
+nearby_volunteers = []
 
 class service_logic_settings(db.Document):
     profiling_service_ip = db.StringField(default='127.0.0.1', max_length=100)
@@ -61,11 +70,13 @@ def get_limited_profile(data):
 
 def get_nearby_users(data):
     nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
-    nu = nearby_users.json()
-    return nu
+    global nearby_volunteers
+    nearby_volunteers = nearby_users.json()
+    return nearby_volunteers
 
 
 def create_lost_request(data):
+    global time_started
     dataDict = json.loads(data)
     lat = str(dataDict['location']['lat'])
     long = str(dataDict['location']['lng'])
@@ -95,12 +106,15 @@ def create_lost_request(data):
     lost_data = ET.fromstring(data)
     # print(lost_data[0][3].text)
     # print(lost_data)
+    logging.info('Time for PSAP: ' + str(time.time() - time_started) + 'seconds')
     print('posted to lost server\n')
     print('PSAP: ', lost_data[0][3].text)
     print('Emergency Number:', lost_data[0][4].text, '\n')
     LogFile.append('posted to lost server')
     LogFile.append('PSAP: ' + lost_data[0][3].text)
     LogFile.append('Emergency Number:' + lost_data[0][4].text)
+    logging.info(dataDict['user'] + ' -- Time for PSAP: ' + str(time.time() - time_started) + 'seconds')
+
 
 
 @app.route('/logic')
@@ -131,15 +145,23 @@ def save_all():
 
 @app.route('/logic/service/service_logic', methods=['POST'])
 def service_logic():
+    global time_started
+    time_started = time.time()
     data = request.data
-    fp = get_full_profile(data)
-    lp = get_limited_profile(data)
-    nu = get_nearby_users(data)
+    # fp = get_full_profile(data)
+    # lp = get_limited_profile(data)
+    # nu = get_nearby_users(data)   # Getting nearby volunteers
+
+    scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data])
+
+    logging.info(json.loads(data)['user'] + ' -- Time for Volunteers: ' + str(time.time() - time_started) + 'seconds')
+
     create_lost_request(data)
     # print(fp)
     # print(lp)
+    global nearby_volunteers
     print('Volunteers:\n')
-    for i in nu:
+    for i in nearby_volunteers:
         print('Last Name: ', i['last_name'])
         LogFile.append(i['last_name'])
     return 'ok'
@@ -153,4 +175,5 @@ def get_log():
 if __name__ == '__main__':
     # app.secret_key = 'super secret key'
     # app.run(debug=True, port=5000)
+    scheduler.start()
     app.run(host='0.0.0.0', port=8082)

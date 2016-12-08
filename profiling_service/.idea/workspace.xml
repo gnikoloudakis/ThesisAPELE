@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea639d1-0fc7-4c78-a187-0001293083fe" name="Default" comment="08/12/2016a">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/logging.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing/add_users.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing/evaluate_system.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing/test_log.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing/tests.py" />
+    <list default="true" id="9ea639d1-0fc7-4c78-a187-0001293083fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/positioning_service.py" afterPath="$PROJECT_DIR$/../positioning_service/positioning_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profilingService.py" afterPath="$PROJECT_DIR$/profilingService.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
     </list>
     <ignored path="profiling_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -641,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480666444818</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="08/12/2016a">
+      <created>1481195719569</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1481195719569</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -692,7 +690,8 @@
     <MESSAGE value="24/11/2016 - changed static folder to /profiling_app/static" />
     <MESSAGE value="24/11/2016 - moved static folder to root folder" />
     <MESSAGE value="24/11/2016 -removed register and init db from homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/11/2016 -removed register and init db from homepage" />
+    <MESSAGE value="08/12/2016a" />
+    <option name="LAST_COMMIT_MESSAGE" value="08/12/2016a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

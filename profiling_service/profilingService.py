@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import sys
-from flask import Flask, render_template, request, redirect, session, json, flash, url_for, jsonify, app
-from flask.exthook import ExtDeprecationWarning
 import warnings
 from apscheduler.schedulers.background import BackgroundScheduler
+
+from flask import Flask, render_template, request, redirect, session, json, flash, app
+from flask.exthook import ExtDeprecationWarning
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask_mongoengine import MongoEngine
@@ -14,7 +14,6 @@ from werkzeug.utils import secure_filename
 # from .models import User, Role, db
 from datetime import datetime, timedelta
 import os
-from pprint import pprint
 
 scheduler = BackgroundScheduler()
 
@@ -224,7 +223,7 @@ def system_settings():
     return render_template('settings.html', login=login, users=users, settings=settings, alert=alert)
 
 
-@app.route('/settings/save_all',  methods=['POST'])
+@app.route('/settings/save_all', methods=['POST'])
 @login_required
 @roles_required('admin')
 def save_settings():

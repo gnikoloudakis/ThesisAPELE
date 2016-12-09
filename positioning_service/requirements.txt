@@ -33,7 +33,7 @@ mongoengine==0.10.7
 MyApplication==0.1.0
 p2psip==2.2.8
 passlib==1.7.0
-pymongo==3.4.0
+#pymongo==3.4.0
 pyserial==3.2.1
 python-engineio==1.1.0
 python-socketio==1.6.1

@@ -2,7 +2,195 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap-theme.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/bootstrap.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/font-awesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/animated.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/animated.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/bordered-pulled.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/core.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/core.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/fixed-width.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/fixed-width.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/font-awesome.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/font-awesome.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/icons.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/icons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/larger.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/larger.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/list.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/list.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/mixins.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/mixins.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/path.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/path.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/rotated-flipped.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/screen-reader.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/screen-reader.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/stacked.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/stacked.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/less/variables.less" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/less/variables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_animated.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_animated.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_core.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_core.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_fixed-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_icons.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_icons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_larger.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_larger.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_list.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_path.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_path.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_screen-reader.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_stacked.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/_variables.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/Font_awsome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/static/logic/Font_awsome/scss/font-awesome.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap-theme.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/static/logic/css/bootstrap.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/css/sidebar.css" afterPath="$PROJECT_DIR$/static/logic/css/sidebar.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/LICENSE" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/README.md" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/bower.json" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/build/build.less" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/build/build.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/build/build_standalone.less" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/build/build_standalone.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/css/bootstrap-datetimepicker.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/css/bootstrap-datetimepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/bootstrap-datetimepicker.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/bootstrap-datetimepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.az.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.az.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.da.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.de.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.el.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.el.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.es.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.he.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.he.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.id.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.id.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.is.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.is.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.it.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.no.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.no.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.th.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.th.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/less/datetimepicker.less" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/less/datetimepicker.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/minify.sh" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/minify.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/package.json" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/index.html" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/index.html" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_day.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_day.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_day_meridian.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_day_meridian.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_decade.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_decade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_full.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_full.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_hour.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_hour.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_hour_meridian.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_hour_meridian.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_month.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_month.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/screenshot/standard_year.png" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/screenshot/standard_year.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/README.md" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/_coverage.html" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/_coverage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/coverage.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/coverage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/jquery-1.7.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/mock.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/mock.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/qunit-logging.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/qunit-logging.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/qunit.css" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/qunit.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/qunit.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/qunit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/assets/utils.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/assets/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/run-qunit.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/run-qunit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/component.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/component.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/events.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/events.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/formats.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/formats.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/inline.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/inline.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/keyboard_navigation/2011.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/keyboard_navigation/2011.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/keyboard_navigation/2012.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/keyboard_navigation/2012.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/keyboard_navigation/all.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/keyboard_navigation/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/mouse_navigation/2011.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/mouse_navigation/2011.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/mouse_navigation/2012.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/mouse_navigation/2012.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/mouse_navigation/all.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/mouse_navigation/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/suites/options.js" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/suites/options.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/tests.html" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/tests.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/datetimepicker/tests/tests.min.html" afterPath="$PROJECT_DIR$/static/logic/datetimepicker/tests/tests.min.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/logic/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/logic/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/logic/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/logic/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/logic/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/images/einstein1_7.jpg" afterPath="$PROJECT_DIR$/static/logic/images/einstein1_7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/images/photo.jpg" afterPath="$PROJECT_DIR$/static/logic/images/photo.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/logic/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/logic/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/static/logic/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/js/maps.js" afterPath="$PROJECT_DIR$/static/logic/js/maps.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/js/npm.js" afterPath="$PROJECT_DIR$/static/logic/js/npm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/README.txt" afterPath="$PROJECT_DIR$/static/logic/tables/README.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/css/style.css" afterPath="$PROJECT_DIR$/static/logic/tables/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/index.html" afterPath="$PROJECT_DIR$/static/logic/tables/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/js/index.js" afterPath="$PROJECT_DIR$/static/logic/tables/js/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/license.txt" afterPath="$PROJECT_DIR$/static/logic/tables/license.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/service_logic_app/static/tables/scss/style.scss" afterPath="$PROJECT_DIR$/static/logic/tables/scss/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/service_logic.iml" afterPath="$PROJECT_DIR$/.idea/service_logic.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceLogic.py" afterPath="$PROJECT_DIR$/serviceLogic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +217,8 @@
       <file leaf-file-name="serviceLogic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serviceLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="210">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#25#72#0" expanded="true" />
               </folding>
@@ -38,11 +226,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log.txt">
+      <file leaf-file-name="IndexLayout.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="77" column="46" lean-forward="false" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+            <state relative-caret-position="-652">
+              <caret line="43" column="97" lean-forward="true" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -62,10 +250,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
         <option value="$PROJECT_DIR$/stetetetet.txt" />
-        <option value="$PROJECT_DIR$/serviceLogic.py" />
         <option value="$PROJECT_DIR$/log.txt" />
+        <option value="$PROJECT_DIR$/serviceLogic.py" />
+        <option value="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
       </list>
     </option>
   </component>
@@ -76,10 +264,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="13" />
-    <option name="width" value="880" />
-    <option name="height" value="999" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -97,8 +284,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,24 +328,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service_logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service_logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../positioning_service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yannis\Desktop\Pycharm_projects\Thesis\ThesisAPELE\service_logic" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/logic" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\yannis\Desktop\Pycharm_projects\Thesis\ThesisAPELE\service_logic" />
       <recent name="C:\Users\yannis\Desktop\Pycharm_projects\Thesis\ThesisAPELE\service_logic\service_logic_app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yannis\Desktop\Pycharm_projects\Thesis\ThesisAPELE\service_logic" />
     </key>
   </component>
   <component name="RunManager" selected="Python.service_logic">
@@ -488,29 +697,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="13" width="880" height="999" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1502146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35103926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35450345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35063437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32682925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35063437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35450345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,11 +762,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/serviceLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,68 +897,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/logic/js/npm.js" />
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="1546" column="0" lean-forward="false" selection-start-line="1546" selection-start-column="0" selection-end-line="1546" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tetetetet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stetetetet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Python27/Lib/logging/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/tetetetet.txt" />
+    <entry file="file://$PROJECT_DIR$/stetetetet.txt" />
     <entry file="file://$PROJECT_DIR$/serviceLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="e#25#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log.txt">
+    <entry file="file://$PROJECT_DIR$/log.txt" />
+    <entry file="file://$PROJECT_DIR$/templates/Layout/IndexLayout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="77" column="46" lean-forward="false" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+        <state relative-caret-position="-652">
+          <caret line="43" column="97" lean-forward="true" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="97" />
           <folding />
         </state>
       </provider>

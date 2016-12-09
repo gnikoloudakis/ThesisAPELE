@@ -12,7 +12,7 @@ import requests, xml.etree.ElementTree as ET
 from flask_mongoengine import MongoEngine
 import os, time, datetime
 
-logging.basicConfig(filename='/Users/yannis/Desktop/Pycharm_projects/Thesis/ThesisAPELE/service_logic/log.txt', filemode='w', level=logging.INFO)
+logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
 
 app = Flask(__name__)
 app.config['DEBUG'] = False

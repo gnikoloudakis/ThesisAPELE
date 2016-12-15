@@ -5,13 +5,17 @@ import warnings
 from flask.exthook import ExtDeprecationWarning
 from requests import ConnectionError
 from apscheduler.schedulers.background import BackgroundScheduler
+# from Backgroundsceduler import scheduler
 from flask import Flask, request, json, render_template, redirect
 from flask_mongoengine import MongoEngine
 from tofile import write_file
+from base64 import b16encode
+from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
+
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 
 app = Flask(__name__)
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = os.urandom(16)
 
 # MongoDB config
@@ -21,9 +25,17 @@ app.config['MONGODB_PORT'] = 11495
 app.config['MONGODB_USERNAME'] = 'yannis'
 app.config['MONGODB_PASSWORD'] = 'spacegr'
 
-scheduler = BackgroundScheduler()
+scheduler = BackgroundScheduler(executors={
+    'default': ThreadPoolExecutor(15),
+    'processpool': ProcessPoolExecutor(13)
+}, job_defaults={
+    'coalesce': True,
+    'max_instances': 10
+})
 
-wf = write_file()
+wf = write_file(app.root_path)
+wf.startFile()
+
 # Create database connection object
 db = MongoEngine(app)
 
@@ -70,7 +82,10 @@ def get_nearby_users(data):
     nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
     global nearby_volunteers
     nearby_volunteers = nearby_users.json()
-    wf.outputFile(json.loads(data)['user'] + '-' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
+    scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
+                      id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+
+    # wf.outputFile(json.loads(data)['user'] + ',' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
     return nearby_volunteers
 
 
@@ -109,12 +124,13 @@ def create_lost_request(data):
     print('PSAP: ', lost_data[0][3].text)
     print('Emergency Number:', lost_data[0][4].text, '\n')
 
-    wf.outputFile(json.loads(data)['user'] + '-' + 'Time for LoST ', str(time.time() - time_started) + 'seconds')
+    scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
+                      id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # wf.outputFile(dataDict['user'] + ',' + 'Time for LoST ', str(time.time() - time_started) + 'seconds')
 
     LogFile.append('posted to lost server')
     LogFile.append('PSAP: ' + lost_data[0][3].text)
     LogFile.append('Emergency Number:' + lost_data[0][4].text)
-
 
 
 @app.route('/logic')
@@ -146,18 +162,19 @@ def save_all():
 @app.route('/logic/service/service_logic', methods=['POST'])
 def service_logic():
     global time_started
-    time_started = time.time()
     data = request.data
+    time_started = json.loads(data)['time_stamp']
+    print (time_started)
     # fp = get_full_profile(data)
     # lp = get_limited_profile(data)
     # nu = get_nearby_users(data)   # Getting nearby volunteers
+    global nearby_volunteers
 
-    scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data])
-
-    create_lost_request(data)
+    scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    scheduler.add_job(create_lost_request, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # create_lost_request(data)
     # print(fp)
     # print(lp)
-    global nearby_volunteers
     print('Volunteers:\n')
     for i in nearby_volunteers:
         print('Last Name: ', i['last_name'])

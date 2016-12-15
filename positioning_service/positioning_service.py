@@ -2,18 +2,30 @@
 
 from flask.exthook import ExtDeprecationWarning
 import warnings
+from tofile import write_file
+from base64 import b16encode
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 from flask import Flask, request, json, render_template, redirect
 import requests
 from flask_mongoengine import MongoEngine
 import os, datetime
+from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-scheduler = BackgroundScheduler()
+scheduler = BackgroundScheduler(executors={
+    'default': ThreadPoolExecutor(15),
+    'processpool': ProcessPoolExecutor(13)
+}, job_defaults={
+    'coalesce': True,
+    'max_instances': 10
+})
 
 app = Flask(__name__)
+wf = write_file(app.root_path)
+wf.startFile()
+
 app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = os.urandom(16)
 
@@ -31,7 +43,7 @@ g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAAyeOvQsv
 times = 3
 state = 'IN'
 LogFile = []
-
+time_stamp = 0
 
 class positioning_settings(db.Document):
     profiling_service_ip = db.StringField(default='127.0.0.1', max_length=100)
@@ -56,7 +68,8 @@ def define_position(rssi, cell, user, ip):
     if rssi < -95:
         times += 1
         if times > 3:
-            print(rssi, 'User is outside the House')  # user is unsafe after 3 times
+            print(user, rssi, 'User is outside the House')  # user is unsafe after 3 times
+            wf.outputFile(user + ' ', str(datetime.datetime.now()))
             LogFile.append(str(rssi) + 'User is outside the House  ')
             state = 'OUT'
             location = acquire_position(cell)  # get location from Google
@@ -112,7 +125,9 @@ def inform_logic(user_location, user_state, user, ip):  # port 6000
     # print('lat:', user_location['location']['lat'])
     # print('long:', user_location['location']['lng'])
     # print('accuracy:', user_location['accuracy'])
+    global time_stamp
     data = {
+        "time_stamp": time_stamp,
         "user": user,
         "user-ip": ip,
         "state": user_state,
@@ -159,9 +174,11 @@ def save_all():
 
 @app.route('/positioning/service/positioning_app', methods=['POST'])
 def positioning():
+    global time_stamp
     LogFile = ' '
     data = request.data
     dataDict = json.loads(data)
+    time_stamp = dataDict['time_stamp']
     user = dataDict['user']
     ip = request.remote_addr
     # print(user)
@@ -170,7 +187,8 @@ def positioning():
     celldata = dataDict['cellular']
     # print(json.dumps(celldata))
     # define_position(rssipower, json.dumps(celldata), user, ip)
-    scheduler.add_job(define_position, 'date', next_run_time=datetime.datetime.now(), id='get_position_for' + user, args=[rssipower, json.dumps(celldata), user, ip])
+    scheduler.add_job(define_position, 'date', next_run_time=datetime.datetime.now(), id=b16encode(os.urandom(16)).decode('utf-8') + user, args=[rssipower, json.dumps(celldata), user, ip],
+                      replace_existing=False)
     # define_position(rssipower, json.dumps(celldata), user, ip)
     return ip
 

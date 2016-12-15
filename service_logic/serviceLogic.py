@@ -182,6 +182,13 @@ def service_logic():
     return 'ok'
 
 
+@app.route('/logic/get_logs')
+def get_logs():
+    with open(app.root_path + '/logs/log.txt', 'r') as logfile:
+        a = logfile.read()
+        return json.dumps(a)
+
+
 @app.route('/logic/service/get_log', methods=['GET'])
 def get_log():
     return json.dumps(LogFile)

@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ea639d1-0fc7-4c78-a187-0001293083fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../positioning_service/logs/log.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../positioning_service/tofile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../service_logic/Backgroundsceduler.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/logging.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testing/test_log.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/positioning_service.py" afterPath="$PROJECT_DIR$/../positioning_service/positioning_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/add_users.py" afterPath="$PROJECT_DIR$/testing/add_users.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/evaluate_system.py" afterPath="$PROJECT_DIR$/testing/evaluate_system.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/logs/log.txt" afterPath="$PROJECT_DIR$/../service_logic/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/testing/writefilesss.py" afterPath="$PROJECT_DIR$/../service_logic/testing/writefilesss.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/tofile.py" afterPath="$PROJECT_DIR$/../service_logic/tofile.py" />
     </list>
     <ignored path="profiling_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -592,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481278856452</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="15/12/2016 updates testing and evaluation scripts">
+      <created>1481798910506</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1481798910506</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -643,7 +636,8 @@
     <MESSAGE value="24/11/2016 - changed static folder to /profiling_app/static" />
     <MESSAGE value="24/11/2016 - moved static folder to root folder" />
     <MESSAGE value="0912/2016 - moved static folder to root folder and added subfolder profiling to static" />
-    <option name="LAST_COMMIT_MESSAGE" value="0912/2016 - moved static folder to root folder and added subfolder profiling to static" />
+    <MESSAGE value="15/12/2016 updates testing and evaluation scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/12/2016 updates testing and evaluation scripts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

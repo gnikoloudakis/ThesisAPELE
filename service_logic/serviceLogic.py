@@ -186,11 +186,18 @@ def init_log():
         return 'initialized log file'
 
 
-@app.route('/logic/get_logs', methods=['GET'])
+@app.route('/logic/get_log', methods=['GET'])
 def get_logs():
     with open(app.root_path + '/logs/log.txt', 'r') as logfile:
         a = logfile.read()
         return json.dumps(a)
+
+
+@app.route('/logic/clear_log', methods=['GET'])
+def get_logs():
+    with open(app.root_path + '/logs/log.txt', 'w') as logfile:
+        logfile.write('')
+        return 'Cleared Log File....'
 
 
 @app.route('/logic/service/get_log', methods=['GET'])

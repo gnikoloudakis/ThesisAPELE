@@ -190,7 +190,7 @@ def positioning():
     scheduler.add_job(define_position, 'date', next_run_time=datetime.datetime.now(), id=b16encode(os.urandom(16)).decode('utf-8') + user, args=[rssipower, json.dumps(celldata), user, ip],
                       replace_existing=False)
     # define_position(rssipower, json.dumps(celldata), user, ip)
-    str.li
+
     return ip
 
 

@@ -477,10 +477,23 @@ def get_nearby_volunteers():
     volunteers = User.objects(user_type='volunteer',
                               position__near=[dataDict['location']['lng'], dataDict['location']['lat']],
                               position__max_distance=int(radius))
+    found_volunteers = []
     for i in volunteers:
         print(i.email)
-    print("SENT NEARBY VOLUNTEERS", json.dumps(volunteers))
-    return json.dumps(volunteers)
+        found_volunteers.append({
+            "first_name": i.first_name,
+            "last_name": i.last_name,
+            "email": i.email,
+            "location":
+                {
+                    "lat": i.position['coordinates'][0],
+                    "lng": i.position['coordinates'][1],
+                    "accuracy": i.accuracy
+                }
+        })
+
+    print("SENT NEARBY VOLUNTEERS", json.dumps(found_volunteers))
+    return json.dumps(found_volunteers)
 
 
 @app.route('/service/profiling/get_nearby_volunteers_simple', methods=['POST'])

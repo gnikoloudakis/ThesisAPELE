@@ -79,13 +79,16 @@ def get_limited_profile(data):
 
 def get_nearby_users(data):
     global time_started
-    nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
     global nearby_volunteers
+    nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
     nearby_volunteers = nearby_users.json()
+    # print ('1111111111111111111', nearby_users.json(), '222222', nearby_volunteers)
     scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
                       id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
-
     # wf.outputFile(json.loads(data)['user'] + ',' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
+    print ('Volunteers:\n')
+    for i in nearby_volunteers:
+        print ('Last Name: ', i['last_name'])
     return nearby_volunteers
 
 
@@ -168,17 +171,11 @@ def service_logic():
     # fp = get_full_profile(data)
     # lp = get_limited_profile(data)
     # nu = get_nearby_users(data)   # Getting nearby volunteers
-    global nearby_volunteers
-
     scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     scheduler.add_job(create_lost_request, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     # create_lost_request(data)
     # print(fp)
     # print(lp)
-    print('Volunteers:\n')
-    for i in nearby_volunteers:
-        print('Last Name: ', i['last_name'])
-        LogFile.append(i['last_name'])
     return 'ok'
 
 

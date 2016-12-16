@@ -1,6 +1,7 @@
 import os, psutil
 from time import gmtime, strftime
 
+
 class write_file(object):
     def __init__(self, path):
         # self.timestamp = time.time()
@@ -12,4 +13,5 @@ class write_file(object):
 
     def outputFile(self, text1, text2):
         with open(self.pathf + '/logs/log.txt', 'a') as logfile:
-            logfile.write('CPU' + ',' + psutil.cpu_percent() + ',' + text1 + ',' + text2 + '\n')
+            logfile.write('CPU' + ',' + str(psutil.cpu_percent()) + ',' + text1 + ',' + text2 + '\n')
+            # 'CPU' + ',' + psutil.cpu_percent() + ',' +

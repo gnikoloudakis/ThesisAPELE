@@ -187,16 +187,16 @@ def init_log():
 
 
 @app.route('/logic/get_log', methods=['GET'])
-def get_logs():
+def get_logfile():
     with open(app.root_path + '/logs/log.txt', 'r') as logfile:
         a = logfile.read()
         return json.dumps(a)
 
 
 @app.route('/logic/clear_log', methods=['GET'])
-def get_logs():
+def clear_log():
     with open(app.root_path + '/logs/log.txt', 'w') as logfile:
-        logfile.write('')
+        logfile.write(' ')
         return 'Cleared Log File....'
 
 

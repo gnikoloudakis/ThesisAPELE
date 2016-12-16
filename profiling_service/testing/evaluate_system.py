@@ -8,7 +8,7 @@ first = 'user'
 last = 'doe'
 user_mail = ' '
 time_stamp = 0
-for i in range(10):
+for i in range(1):
     time_stamp = time.time()
     user_mail = first + str(i).zfill(2) + last + str(i).zfill(2) + '@gmail.com'
     print user_mail

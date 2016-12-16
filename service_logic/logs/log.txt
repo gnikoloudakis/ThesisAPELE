@@ -1,23 +1,2 @@
----------------------------------2016-12-16 08:56:50---------------------------
----------------------------------2016-12-16 08:56:53---------------------------
-CPU,5.7,user00doe00@gmail.com,Time for LoST,2.71299982071
-CPU,20.2,user01doe01@gmail.com,Time for LoST,2.04099988937
-CPU,1.8,user00doe00@gmail.com,Time for Volunteers,2.49599981308
-CPU,5.4,user02doe02@gmail.com,Time for LoST,2.93099999428
-CPU,3.8,user01doe01@gmail.com,Time for Volunteers,3.70700001717
-CPU,12.1,user03doe03@gmail.com,Time for LoST,2.90399980545
-CPU,39.9,user02doe02@gmail.com,Time for Volunteers,3.56999993324
-CPU,3.0,user04doe04@gmail.com,Time for LoST,2.77600002289
-CPU,4.5,user03doe03@gmail.com,Time for Volunteers,3.58999991417
-CPU,9.7,user04doe04@gmail.com,Time for Volunteers,4.08200001717
-CPU,25.6,user05doe05@gmail.com,Time for LoST,2.78900003433
-CPU,8.6,user05doe05@gmail.com,Time for Volunteers,4.09299993515
-CPU,7.7,user06doe06@gmail.com,Time for LoST,2.98699998856
-CPU,9.4,user07doe07@gmail.com,Time for LoST,2.99000000954
-CPU,6.8,user06doe06@gmail.com,Time for Volunteers,3.5759999752
-CPU,28.1,user08doe08@gmail.com,Time for LoST,2.78299999237
-CPU,4.0,user07doe07@gmail.com,Time for Volunteers,3.56900000572
-CPU,3.0,user08doe08@gmail.com,Time for Volunteers,4.08500003815
-CPU,5.0,user09doe09@gmail.com,Time for LoST,4.27200007439
-CPU,10.3,user09doe09@gmail.com,Time for Volunteers,5.57800006866
----------------------------------2016-12-16 08:58:21---------------------------
+---------------------------------2016-12-16 09:07:44---------------------------
+---------------------------------2016-12-16 09:08:22---------------------------

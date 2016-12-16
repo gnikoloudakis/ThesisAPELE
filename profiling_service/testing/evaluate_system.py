@@ -8,7 +8,7 @@ first = 'user'
 last = 'doe'
 user_mail = ' '
 time_stamp = 0
-for i in range(1000):
+for i in range(10):
     time_stamp = time.time()
     user_mail = first + str(i).zfill(2) + last + str(i).zfill(2) + '@gmail.com'
     print user_mail
@@ -45,7 +45,7 @@ for i in range(1000):
     }
     ''' % (time_stamp, user_mail)
     try:
-        requests.post('http://localhost:8081/positioning/service/positioning_app', data=body)
+        requests.post('http://aalapele.owncloud.gr/positioning/service/positioning_app', data=body)
     except ConnectionError as e:
         print(e)
     time.sleep(0.5)

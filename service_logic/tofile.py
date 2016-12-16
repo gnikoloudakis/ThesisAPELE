@@ -9,9 +9,9 @@ class write_file(object):
 
     def startFile(self):
         with open(self.pathf + '/logs/log.txt', 'a') as logfile:
-            logfile.write('---------------------------------' + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + '---------------------------' + '\n')
+            logfile.write('---------------------------------' + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + '---------------------------' + os.linesep)
 
     def outputFile(self, text1, text2):
         with open(self.pathf + '/logs/log.txt', 'a') as logfile:
-            logfile.write('CPU' + ',' + str(psutil.cpu_percent()) + ',' + text1 + ',' + text2 + '\n')
+            logfile.write('CPU' + ',' + str(psutil.cpu_percent()) + ',' + text1 + ',' + text2 + os.linesep)
             # 'CPU' + ',' + psutil.cpu_percent() + ',' +

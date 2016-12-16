@@ -86,7 +86,7 @@ def get_nearby_users(data):
     scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
                       id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     # wf.outputFile(json.loads(data)['user'] + ',' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
-    print ('Volunteers:\n')
+    print ('Volunteers:' + os.linesep)
     for i in nearby_volunteers:
         print ('Last Name: ', i['last_name'])
     return nearby_volunteers
@@ -123,9 +123,9 @@ def create_lost_request(data):
     lost_data = ET.fromstring(data)
     # print(lost_data[0][3].text)
     # print(lost_data)
-    print('posted to lost server\n')
+    print('posted to lost server' + os.linesep)
     print('PSAP: ', lost_data[0][3].text)
-    print('Emergency Number:', lost_data[0][4].text, '\n')
+    print('Emergency Number:', lost_data[0][4].text, os.linesep)
 
     scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
                       id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
@@ -182,7 +182,7 @@ def service_logic():
 @app.route('/logic/init_log', methods=['GET'])
 def init_log():
     with open(app.root_path + '/logs/log.txt', 'a') as logfile:
-        logfile.write('---------------------------------' + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()) + '---------------------------' + '\n')
+        logfile.write('---------------------------------' + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()) + '---------------------------' + os.linesep)
         return 'initialized log file'
 
 

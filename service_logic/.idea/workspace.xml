@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/logs/log.txt" afterPath="$PROJECT_DIR$/../positioning_service/logs/log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/profilingService.py" afterPath="$PROJECT_DIR$/../profiling_service/profilingService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/requirements.txt" afterPath="$PROJECT_DIR$/../profiling_service/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceLogic.py" afterPath="$PROJECT_DIR$/serviceLogic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tofile.py" afterPath="$PROJECT_DIR$/tofile.py" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -568,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481813255055</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="16/12/2016 inserted init log route">
+      <created>1481874549390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1481874549390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -623,7 +625,8 @@
     <MESSAGE value="09/12/2016 created logic folder into static. moved static files into logic folder" />
     <MESSAGE value="14/12/2016 inserted file writer (log)" />
     <MESSAGE value="15/15/2016 updated testing snd evaluation scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/15/2016 updated testing snd evaluation scripts" />
+    <MESSAGE value="16/12/2016 inserted init log route" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/12/2016 inserted init log route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

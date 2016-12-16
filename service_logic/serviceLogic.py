@@ -182,7 +182,14 @@ def service_logic():
     return 'ok'
 
 
-@app.route('/logic/get_logs')
+@app.route('/logic/init_log', methods=['GET'])
+def init_log():
+    with open(app.root_path + 'logs/log.txt', 'w') as logfile:
+        logfile.write('---------------------------------' + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()) + '---------------------------' + '\n')
+        return 'initialized log file'
+
+
+@app.route('/logic/get_logs', methods=['GET'])
 def get_logs():
     with open(app.root_path + '/logs/log.txt', 'r') as logfile:
         a = logfile.read()

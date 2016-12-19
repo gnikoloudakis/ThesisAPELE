@@ -26,8 +26,8 @@ app.config['MONGODB_USERNAME'] = 'yannis'
 app.config['MONGODB_PASSWORD'] = 'spacegr'
 
 scheduler = BackgroundScheduler(executors={
-    'default': ThreadPoolExecutor(15),
-    'processpool': ProcessPoolExecutor(13)
+    'default': ThreadPoolExecutor(20),
+    'processpool': ProcessPoolExecutor(20)
 }, job_defaults={
     'coalesce': True,
     'max_instances': 10

@@ -48,6 +48,6 @@ for i in range(1):
         requests.post('http://aalapele.owncloud.gr/positioning/service/positioning_app', data=body)
     except ConnectionError as e:
         print(e)
-    time.sleep(0.5)
+    time.sleep(1)
     # print body
 print ('execution time: ' + str(timestarted - time.time()))

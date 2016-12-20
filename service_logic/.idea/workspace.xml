@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/../profiling_service/templates/Layout/IndexLayout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -701,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482233584789</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="16/12/2016 inserted init log route">
+      <created>1482233774595</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1482233774595</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">

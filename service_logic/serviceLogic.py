@@ -2,6 +2,7 @@
 import os, time, datetime
 import requests, xml.etree.ElementTree as ET
 import warnings
+import logging
 from flask.exthook import ExtDeprecationWarning
 from requests import ConnectionError
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -13,6 +14,7 @@ from base64 import b16encode
 from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
+logging.basicConfig()
 
 app = Flask(__name__)
 app.config['DEBUG'] = True

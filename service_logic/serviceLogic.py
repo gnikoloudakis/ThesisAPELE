@@ -124,13 +124,13 @@ def create_lost_request(data):
     data = lost_responce.text
     lost_data = ET.fromstring(data)
     # print(lost_data[0][3].text)
-    logging.debug('lost data: ' + lost_data)
+    logging.debug('lost data: ', lost_data)
     # print('posted to lost server' + os.linesep)
     # print('PSAP: ', lost_data[0][3].text)
     # print('Emergency Number:', lost_data[0][4].text, os.linesep)
     logging.debug('posted to lost server' + os.linesep)
-    logging.debug('PSAP: ' + lost_data[0][3].text)
-    logging.debug('Emergency Number: ' + lost_data[0][4].text, os.linesep)
+    logging.debug('PSAP: ', lost_data[0][3].text)
+    logging.debug('Emergency Number: ', lost_data[0][4].text, os.linesep)
 
     scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
                       id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)

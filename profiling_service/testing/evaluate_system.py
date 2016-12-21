@@ -45,7 +45,7 @@ for i in range(1):
     }
     ''' % (time_stamp, user_mail)
     try:
-        requests.post('http://localhost:8081/positioning/service/positioning_app', data=body)
+        requests.post('http://83.212.99.200/positioning/service/positioning_app', data=body)
     except ConnectionError as e:
         print(e)
     time.sleep(1)

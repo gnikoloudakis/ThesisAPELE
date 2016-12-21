@@ -116,11 +116,11 @@ def create_lost_request(data):
    </findService>""" % (long, lat)
 
     headers = {'Content-Type': 'text/plain'}
-    try:
-        lost_responce = requests.post('http://' + lost_ip + ':' + lost_port + '/lost/lost', data=lost_request, headers=headers)
+    # try:
+    lost_responce = requests.post('http://' + lost_ip + ':' + lost_port + '/lost/lost', data=lost_request, headers=headers)
         # print(lost_request)
-    except ConnectionError as e:
-        print(e)
+    # except ConnectionError as e:
+    #     print(e)
     data = lost_responce.text
     lost_data = ET.fromstring(data)
     # print(lost_data[0][3].text)

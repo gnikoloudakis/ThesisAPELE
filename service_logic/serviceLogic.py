@@ -128,7 +128,7 @@ def create_lost_request(data):
     # print('posted to lost server' + os.linesep)
     # print('PSAP: ', lost_data[0][3].text)
     # print('Emergency Number:', lost_data[0][4].text, os.linesep)
-    logging.info('posted to lost server' + os.linesep)
+    logging.debug('posted to lost server' + os.linesep)
     logging.debug('PSAP: ' + lost_data[0][3].text)
     logging.debug('Emergency Number: ' + lost_data[0][4].text, os.linesep)
 

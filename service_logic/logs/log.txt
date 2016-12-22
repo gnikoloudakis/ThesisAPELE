@@ -1,44 +1,366 @@
----------------------------------2016-12-22 10:39:18---------------------------
----------------------------------2016-12-22 10:40:21---------------------------
----------------------------------2016-12-22 10:43:26---------------------------
----------------------------------2016-12-22 10:44:59---------------------------
----------------------------------2016-12-22 10:46:08---------------------------
----------------------------------2016-12-22 10:47:45---------------------------
----------------------------------2016-12-22 10:48:20---------------------------
----------------------------------2016-12-22 10:50:13---------------------------
----------------------------------2016-12-22 10:51:27---------------------------
----------------------------------2016-12-22 10:52:28---------------------------
----------------------------------2016-12-22 10:52:37---------------------------
----------------------------------2016-12-22 10:53:14---------------------------
----------------------------------2016-12-22 10:55:46---------------------------
----------------------------------2016-12-22 10:55:59---------------------------
----------------------------------2016-12-22 10:57:42---------------------------
----------------------------------2016-12-22 10:57:52---------------------------
----------------------------------2016-12-22 11:00:48---------------------------
----------------------------------2016-12-22 11:00:56---------------------------
----------------------------------2016-12-22 11:01:06---------------------------
----------------------------------2016-12-22 11:02:37---------------------------
----------------------------------2016-12-22 11:02:52---------------------------
----------------------------------2016-12-22 11:03:11---------------------------
----------------------------------2016-12-22 11:03:27---------------------------
----------------------------------2016-12-22 11:03:34---------------------------
----------------------------------2016-12-22 11:04:16---------------------------
----------------------------------2016-12-22 11:05:12---------------------------
----------------------------------2016-12-22 11:05:38---------------------------
----------------------------------2016-12-22 11:05:44---------------------------
----------------------------------2016-12-22 11:05:53---------------------------
----------------------------------2016-12-22 11:06:01---------------------------
----------------------------------2016-12-22 11:07:11---------------------------
----------------------------------2016-12-22 11:08:35---------------------------
----------------------------------2016-12-22 11:13:29---------------------------
----------------------------------2016-12-22 11:13:49---------------------------
----------------------------------2016-12-22 11:13:54---------------------------
----------------------------------2016-12-22 11:14:03---------------------------
----------------------------------2016-12-22 11:14:13---------------------------
----------------------------------2016-12-22 11:14:23---------------------------
----------------------------------2016-12-22 11:16:54---------------------------
----------------------------------2016-12-22 11:18:33---------------------------
----------------------------------2016-12-22 11:19:01---------------------------
----------------------------------2016-12-22 11:19:38---------------------------
----------------------------------2016-12-22 11:20:47---------------------------
----------------------------------2016-12-22 11:21:50---------------------------
+ CPU,7.8,user00doe00@gmail.com,Time for LoST,15.0559999943
+CPU,9.2,user00doe00@gmail.com,Time for Volunteers,15.5130000114
+---------------------------------2016-12-22 14:59:33---------------------------
+---------------------------------2016-12-22 14:59:36---------------------------
+CPU,6.0,user00doe00@gmail.com,Time for LoST,3.47000002861
+CPU,21.1,user00doe00@gmail.com,Time for Volunteers,3.7650001049
+CPU,7.2,user01doe01@gmail.com,Time for LoST,3.39100003242
+CPU,20.0,user01doe01@gmail.com,Time for Volunteers,3.72000002861
+CPU,9.6,user02doe02@gmail.com,Time for LoST,3.39599990845
+CPU,0.0,user02doe02@gmail.com,Time for Volunteers,3.71700000763
+CPU,9.1,user03doe03@gmail.com,Time for LoST,3.39499998093
+CPU,5.9,user03doe03@gmail.com,Time for Volunteers,3.71300005913
+CPU,12.4,user04doe04@gmail.com,Time for LoST,3.39499998093
+CPU,5.2,user04doe04@gmail.com,Time for Volunteers,3.71600008011
+CPU,11.0,user05doe05@gmail.com,Time for LoST,3.40499997139
+CPU,5.2,user05doe05@gmail.com,Time for Volunteers,3.71700000763
+CPU,9.3,user06doe06@gmail.com,Time for LoST,3.39299988747
+CPU,16.5,user06doe06@gmail.com,Time for Volunteers,3.72799992561
+CPU,6.5,user07doe07@gmail.com,Time for LoST,3.47200012207
+CPU,5.9,user07doe07@gmail.com,Time for Volunteers,3.78100013733
+CPU,17.4,user08doe08@gmail.com,Time for LoST,3.40899991989
+CPU,15.2,user08doe08@gmail.com,Time for Volunteers,3.7349998951
+CPU,8.1,user09doe09@gmail.com,Time for LoST,5.51699995995
+CPU,4.5,user09doe09@gmail.com,Time for Volunteers,5.83099985123
+---------------------------------2016-12-22 15:00:21---------------------------
+---------------------------------2016-12-22 15:00:24---------------------------
+CPU,9.4,user00doe00@gmail.com,Time for LoST,3.51399993896
+CPU,2.6,user00doe00@gmail.com,Time for Volunteers,3.82699990273
+CPU,7.7,user01doe01@gmail.com,Time for LoST,3.42000007629
+CPU,5.9,user01doe01@gmail.com,Time for Volunteers,3.73300004005
+CPU,9.5,user02doe02@gmail.com,Time for LoST,3.39100003242
+CPU,19.4,user02doe02@gmail.com,Time for Volunteers,3.70300006866
+CPU,5.7,user03doe03@gmail.com,Time for LoST,3.40600013733
+CPU,31.6,user03doe03@gmail.com,Time for Volunteers,3.71399998665
+CPU,7.6,user04doe04@gmail.com,Time for LoST,3.38899993896
+CPU,23.8,user04doe04@gmail.com,Time for Volunteers,3.70199990273
+CPU,6.4,user05doe05@gmail.com,Time for LoST,3.39999985695
+CPU,23.8,user05doe05@gmail.com,Time for Volunteers,3.79200005531
+CPU,9.2,user06doe06@gmail.com,Time for LoST,3.39800000191
+CPU,0.0,user06doe06@gmail.com,Time for Volunteers,3.75
+CPU,9.2,user07doe07@gmail.com,Time for LoST,3.41400003433
+CPU,7.2,user07doe07@gmail.com,Time for Volunteers,3.73099994659
+CPU,9.2,user08doe08@gmail.com,Time for LoST,3.40799999237
+CPU,5.9,user08doe08@gmail.com,Time for Volunteers,3.72200012207
+CPU,6.0,user09doe09@gmail.com,Time for LoST,3.41100001335
+CPU,18.8,user09doe09@gmail.com,Time for Volunteers,3.72099995613
+CPU,7.1,user10doe10@gmail.com,Time for LoST,3.43099999428
+CPU,11.1,user10doe10@gmail.com,Time for Volunteers,3.75099992752
+CPU,8.1,user11doe11@gmail.com,Time for LoST,3.40900015831
+CPU,18.8,user11doe11@gmail.com,Time for Volunteers,3.72500014305
+CPU,7.8,user12doe12@gmail.com,Time for LoST,3.42299985886
+CPU,36.8,user12doe12@gmail.com,Time for Volunteers,3.74000000954
+CPU,9.5,user13doe13@gmail.com,Time for LoST,3.40100002289
+CPU,10.5,user13doe13@gmail.com,Time for Volunteers,3.74699997902
+CPU,8.7,user14doe14@gmail.com,Time for LoST,3.42700004578
+CPU,30.4,user14doe14@gmail.com,Time for Volunteers,3.75200009346
+CPU,6.2,user15doe15@gmail.com,Time for LoST,3.41899991035
+CPU,10.7,user15doe15@gmail.com,Time for Volunteers,4.30799984932
+CPU,7.3,user16doe16@gmail.com,Time for LoST,3.98699998856
+CPU,7.0,user16doe16@gmail.com,Time for Volunteers,4.30099987984
+CPU,7.1,user17doe17@gmail.com,Time for LoST,3.47300004959
+CPU,17.0,user17doe17@gmail.com,Time for Volunteers,3.79200005531
+CPU,8.9,user18doe18@gmail.com,Time for LoST,3.36699986458
+CPU,2.7,user18doe18@gmail.com,Time for Volunteers,3.73000001907
+CPU,7.9,user19doe19@gmail.com,Time for LoST,3.39300012589
+CPU,10.4,user19doe19@gmail.com,Time for Volunteers,3.70499992371
+CPU,10.2,user20doe20@gmail.com,Time for LoST,3.40500020981
+CPU,4.5,user20doe20@gmail.com,Time for Volunteers,3.72500014305
+CPU,10.5,user21doe21@gmail.com,Time for LoST,3.40100002289
+CPU,0.0,user21doe21@gmail.com,Time for Volunteers,3.73099994659
+CPU,7.5,user22doe22@gmail.com,Time for LoST,3.40900015831
+CPU,14.7,user22doe22@gmail.com,Time for Volunteers,3.74699997902
+CPU,9.5,user23doe23@gmail.com,Time for LoST,3.42299985886
+CPU,5.2,user23doe23@gmail.com,Time for Volunteers,3.74099993706
+CPU,9.3,user24doe24@gmail.com,Time for LoST,3.42499995232
+CPU,3.3,user24doe24@gmail.com,Time for Volunteers,3.75099992752
+CPU,9.8,user25doe25@gmail.com,Time for LoST,3.40299987793
+CPU,4.8,user25doe25@gmail.com,Time for Volunteers,3.73099994659
+CPU,7.6,user26doe26@gmail.com,Time for LoST,3.43000006676
+CPU,2.6,user26doe26@gmail.com,Time for Volunteers,3.7349998951
+CPU,12.4,user27doe27@gmail.com,Time for LoST,3.43000006676
+CPU,0.0,user27doe27@gmail.com,Time for Volunteers,3.75200009346
+CPU,10.7,user28doe28@gmail.com,Time for LoST,3.40999984741
+CPU,25.2,user28doe28@gmail.com,Time for Volunteers,3.72599983215
+CPU,8.0,user29doe29@gmail.com,Time for LoST,3.38800001144
+CPU,5.9,user29doe29@gmail.com,Time for Volunteers,3.71099996567
+CPU,8.3,user30doe30@gmail.com,Time for LoST,3.43799996376
+CPU,9.7,user30doe30@gmail.com,Time for Volunteers,3.75
+CPU,7.8,user31doe31@gmail.com,Time for LoST,3.41100001335
+CPU,5.9,user31doe31@gmail.com,Time for Volunteers,3.73099994659
+CPU,8.6,user32doe32@gmail.com,Time for LoST,3.41799998283
+CPU,15.2,user32doe32@gmail.com,Time for Volunteers,3.73699998856
+CPU,7.7,user33doe33@gmail.com,Time for LoST,3.44400000572
+CPU,13.3,user33doe33@gmail.com,Time for Volunteers,3.75800013542
+CPU,7.8,user34doe34@gmail.com,Time for LoST,3.40499997139
+CPU,8.6,user34doe34@gmail.com,Time for Volunteers,3.72899985313
+CPU,9.8,user35doe35@gmail.com,Time for LoST,3.39299988747
+CPU,7.2,user35doe35@gmail.com,Time for Volunteers,3.71099996567
+CPU,7.9,user36doe36@gmail.com,Time for LoST,3.40300011635
+CPU,2.3,user36doe36@gmail.com,Time for Volunteers,3.73000001907
+CPU,8.2,user37doe37@gmail.com,Time for LoST,3.40799999237
+CPU,6.8,user37doe37@gmail.com,Time for Volunteers,3.73299980164
+CPU,11.5,user38doe38@gmail.com,Time for LoST,3.42300009727
+CPU,9.2,user38doe38@gmail.com,Time for Volunteers,3.79099988937
+CPU,6.3,user39doe39@gmail.com,Time for LoST,3.41199994087
+CPU,5.9,user39doe39@gmail.com,Time for Volunteers,3.72399997711
+CPU,10.1,user40doe40@gmail.com,Time for LoST,3.39199995995
+CPU,7.4,user40doe40@gmail.com,Time for Volunteers,3.71000003815
+CPU,5.8,user41doe41@gmail.com,Time for LoST,3.41100001335
+CPU,20.0,user41doe41@gmail.com,Time for Volunteers,3.73699998856
+CPU,10.2,user42doe42@gmail.com,Time for LoST,3.39599990845
+CPU,5.0,user42doe42@gmail.com,Time for Volunteers,3.71399998665
+CPU,9.7,user43doe43@gmail.com,Time for LoST,3.38899993896
+CPU,0.0,user43doe43@gmail.com,Time for Volunteers,3.70700001717
+CPU,8.3,user44doe44@gmail.com,Time for LoST,3.37000012398
+CPU,16.4,user44doe44@gmail.com,Time for Volunteers,3.70800018311
+CPU,9.9,user45doe45@gmail.com,Time for LoST,3.39899992943
+CPU,7.4,user45doe45@gmail.com,Time for Volunteers,3.72699999809
+CPU,4.9,user46doe46@gmail.com,Time for LoST,3.40899991989
+CPU,14.7,user46doe46@gmail.com,Time for Volunteers,3.73099994659
+CPU,8.8,user47doe47@gmail.com,Time for LoST,3.40400004387
+CPU,2.7,user47doe47@gmail.com,Time for Volunteers,3.72600007057
+CPU,9.1,user48doe48@gmail.com,Time for LoST,3.39100003242
+CPU,0.0,user48doe48@gmail.com,Time for Volunteers,3.74000000954
+CPU,9.9,user49doe49@gmail.com,Time for LoST,3.40400004387
+CPU,14.1,user49doe49@gmail.com,Time for Volunteers,3.71900010109
+CPU,8.2,user50doe50@gmail.com,Time for LoST,3.43200016022
+CPU,20.8,user50doe50@gmail.com,Time for Volunteers,3.74300003052
+CPU,8.2,user51doe51@gmail.com,Time for LoST,3.40999984741
+CPU,3.8,user51doe51@gmail.com,Time for Volunteers,3.73799991608
+CPU,10.9,user52doe52@gmail.com,Time for LoST,3.41600012779
+CPU,0.0,user52doe52@gmail.com,Time for Volunteers,3.74099993706
+CPU,8.5,user53doe53@gmail.com,Time for LoST,3.44799995422
+CPU,16.5,user53doe53@gmail.com,Time for Volunteers,3.77300000191
+CPU,8.8,user54doe54@gmail.com,Time for LoST,3.39599990845
+CPU,22.2,user54doe54@gmail.com,Time for Volunteers,3.7539999485
+CPU,8.1,user55doe55@gmail.com,Time for LoST,3.42500019073
+CPU,0.0,user55doe55@gmail.com,Time for Volunteers,3.74300003052
+CPU,11.3,user56doe56@gmail.com,Time for LoST,3.45000004768
+CPU,8.6,user56doe56@gmail.com,Time for Volunteers,3.76900005341
+CPU,8.3,user57doe57@gmail.com,Time for LoST,3.39800000191
+CPU,8.9,user57doe57@gmail.com,Time for Volunteers,3.72399997711
+CPU,6.6,user58doe58@gmail.com,Time for LoST,3.43899989128
+CPU,18.2,user58doe58@gmail.com,Time for Volunteers,3.7619998455
+CPU,8.4,user59doe59@gmail.com,Time for LoST,3.41899991035
+CPU,11.8,user59doe59@gmail.com,Time for Volunteers,3.72899985313
+CPU,10.7,user60doe60@gmail.com,Time for LoST,3.44199991226
+CPU,9.2,user60doe60@gmail.com,Time for Volunteers,3.83299994469
+CPU,9.1,user61doe61@gmail.com,Time for LoST,3.52500009537
+CPU,17.9,user61doe61@gmail.com,Time for Volunteers,3.84000015259
+CPU,8.9,user62doe62@gmail.com,Time for LoST,3.41799998283
+CPU,7.9,user62doe62@gmail.com,Time for Volunteers,3.74799990654
+CPU,8.5,user63doe63@gmail.com,Time for LoST,3.43000006676
+CPU,38.9,user63doe63@gmail.com,Time for Volunteers,3.74000000954
+CPU,5.8,user64doe64@gmail.com,Time for LoST,3.40999984741
+CPU,23.8,user64doe64@gmail.com,Time for Volunteers,3.71899986267
+CPU,7.0,user65doe65@gmail.com,Time for LoST,3.41899991035
+CPU,24.4,user65doe65@gmail.com,Time for Volunteers,3.73699998856
+CPU,7.6,user66doe66@gmail.com,Time for LoST,3.40799999237
+CPU,5.3,user66doe66@gmail.com,Time for Volunteers,3.72600007057
+CPU,8.0,user67doe67@gmail.com,Time for LoST,3.40199995041
+CPU,12.3,user67doe67@gmail.com,Time for Volunteers,3.72799992561
+CPU,7.0,user68doe68@gmail.com,Time for LoST,3.44099998474
+CPU,12.7,user68doe68@gmail.com,Time for Volunteers,3.77200007439
+CPU,8.0,user69doe69@gmail.com,Time for LoST,3.46000003815
+CPU,22.6,user69doe69@gmail.com,Time for Volunteers,3.7650001049
+CPU,6.5,user70doe70@gmail.com,Time for LoST,3.38599991798
+CPU,20.6,user70doe70@gmail.com,Time for Volunteers,3.71399998665
+CPU,10.0,user71doe71@gmail.com,Time for LoST,3.39700007439
+CPU,0.0,user71doe71@gmail.com,Time for Volunteers,3.72699999809
+CPU,10.3,user72doe72@gmail.com,Time for LoST,3.41299986839
+CPU,8.0,user72doe72@gmail.com,Time for Volunteers,3.72799992561
+CPU,9.5,user73doe73@gmail.com,Time for LoST,3.39199995995
+CPU,4.6,user73doe73@gmail.com,Time for Volunteers,3.70700001717
+CPU,7.6,user74doe74@gmail.com,Time for LoST,3.42300009727
+CPU,21.3,user74doe74@gmail.com,Time for Volunteers,3.74100017548
+CPU,9.6,user75doe75@gmail.com,Time for LoST,3.382999897
+CPU,2.3,user75doe75@gmail.com,Time for Volunteers,3.70799994469
+CPU,9.4,user76doe76@gmail.com,Time for LoST,3.40700006485
+CPU,17.6,user76doe76@gmail.com,Time for Volunteers,3.73699998856
+CPU,7.8,user77doe77@gmail.com,Time for LoST,3.40799999237
+CPU,17.6,user77doe77@gmail.com,Time for Volunteers,3.73699998856
+CPU,9.4,user78doe78@gmail.com,Time for LoST,3.4240000248
+CPU,5.9,user78doe78@gmail.com,Time for Volunteers,3.74499988556
+CPU,10.2,user79doe79@gmail.com,Time for LoST,3.4509999752
+CPU,4.5,user79doe79@gmail.com,Time for Volunteers,3.77099990845
+CPU,6.9,user80doe80@gmail.com,Time for LoST,3.41400003433
+CPU,23.8,user80doe80@gmail.com,Time for Volunteers,3.72600007057
+CPU,9.1,user81doe81@gmail.com,Time for LoST,3.47799992561
+CPU,8.6,user81doe81@gmail.com,Time for Volunteers,3.79799985886
+CPU,8.5,user82doe82@gmail.com,Time for LoST,3.41199994087
+CPU,14.7,user82doe82@gmail.com,Time for Volunteers,3.7539999485
+CPU,6.5,user83doe83@gmail.com,Time for LoST,3.41200017929
+CPU,2.6,user83doe83@gmail.com,Time for Volunteers,3.73200011253
+CPU,11.7,user84doe84@gmail.com,Time for LoST,3.38599991798
+CPU,6.5,user84doe84@gmail.com,Time for Volunteers,3.73399996758
+CPU,8.9,user85doe85@gmail.com,Time for LoST,3.41000008583
+CPU,4.3,user85doe85@gmail.com,Time for Volunteers,3.72300004959
+CPU,7.6,user86doe86@gmail.com,Time for LoST,3.39699983597
+CPU,7.4,user86doe86@gmail.com,Time for Volunteers,3.71299982071
+CPU,10.5,user87doe87@gmail.com,Time for LoST,3.4470000267
+CPU,11.1,user87doe87@gmail.com,Time for Volunteers,3.75900006294
+CPU,17.2,user88doe88@gmail.com,Time for LoST,3.39100003242
+CPU,5.1,user88doe88@gmail.com,Time for Volunteers,3.71600008011
+CPU,10.5,user89doe89@gmail.com,Time for LoST,3.36699986458
+CPU,7.0,user89doe89@gmail.com,Time for Volunteers,3.73699998856
+CPU,17.3,user90doe90@gmail.com,Time for LoST,3.37700009346
+CPU,16.2,user90doe90@gmail.com,Time for Volunteers,3.6930000782
+CPU,8.0,user91doe91@gmail.com,Time for LoST,3.38099980354
+CPU,2.0,user91doe91@gmail.com,Time for Volunteers,3.76699995995
+CPU,10.5,user92doe92@gmail.com,Time for LoST,3.38400006294
+CPU,4.9,user92doe92@gmail.com,Time for Volunteers,3.78500008583
+CPU,8.6,user93doe93@gmail.com,Time for LoST,3.37700009346
+CPU,5.9,user93doe93@gmail.com,Time for Volunteers,3.73000001907
+CPU,8.3,user94doe94@gmail.com,Time for LoST,3.41500020027
+CPU,32.9,user94doe94@gmail.com,Time for Volunteers,3.73399996758
+CPU,10.1,user95doe95@gmail.com,Time for LoST,3.37800002098
+CPU,4.2,user95doe95@gmail.com,Time for Volunteers,3.76900005341
+CPU,8.0,user96doe96@gmail.com,Time for LoST,3.46800017357
+CPU,23.8,user96doe96@gmail.com,Time for Volunteers,3.78200006485
+CPU,6.6,user97doe97@gmail.com,Time for LoST,3.40299987793
+CPU,9.7,user97doe97@gmail.com,Time for Volunteers,3.81599998474
+CPU,16.1,user98doe98@gmail.com,Time for LoST,3.42300009727
+CPU,7.1,user98doe98@gmail.com,Time for Volunteers,3.84200000763
+CPU,6.2,user99doe99@gmail.com,Time for LoST,5.46800017357
+CPU,13.5,user99doe99@gmail.com,Time for Volunteers,5.79400014877
+---------------------------------2016-12-22 15:05:38---------------------------
+---------------------------------2016-12-22 15:05:41---------------------------
+CPU,6.6,user00doe00@gmail.com,Time for LoST,3.54200005531
+CPU,11.1,user00doe00@gmail.com,Time for Volunteers,3.83800005913
+CPU,6.3,user01doe01@gmail.com,Time for LoST,3.41999983788
+CPU,17.9,user01doe01@gmail.com,Time for Volunteers,3.77199983597
+CPU,8.4,user02doe02@gmail.com,Time for LoST,3.39800000191
+CPU,21.3,user02doe02@gmail.com,Time for Volunteers,3.72200012207
+CPU,8.7,user03doe03@gmail.com,Time for LoST,3.51999998093
+CPU,6.8,user03doe03@gmail.com,Time for Volunteers,3.83499979973
+CPU,7.8,user04doe04@gmail.com,Time for LoST,3.39999985695
+CPU,23.2,user04doe04@gmail.com,Time for Volunteers,3.72000002861
+CPU,9.8,user05doe05@gmail.com,Time for LoST,3.41400003433
+CPU,7.0,user05doe05@gmail.com,Time for Volunteers,3.73200011253
+CPU,8.5,user06doe06@gmail.com,Time for LoST,3.3869998455
+CPU,4.3,user06doe06@gmail.com,Time for Volunteers,3.70599985123
+CPU,9.2,user07doe07@gmail.com,Time for LoST,3.37700009346
+CPU,12.7,user07doe07@gmail.com,Time for Volunteers,3.74000000954
+CPU,8.2,user08doe08@gmail.com,Time for LoST,3.41200017929
+CPU,2.6,user08doe08@gmail.com,Time for Volunteers,3.73399996758
+CPU,7.7,user09doe09@gmail.com,Time for LoST,3.41100001335
+CPU,17.0,user09doe09@gmail.com,Time for Volunteers,3.72099995613
+CPU,6.0,user10doe10@gmail.com,Time for LoST,3.38599991798
+CPU,31.0,user10doe10@gmail.com,Time for Volunteers,3.70300006866
+CPU,8.0,user11doe11@gmail.com,Time for LoST,3.44000005722
+CPU,1.8,user11doe11@gmail.com,Time for Volunteers,3.75900006294
+CPU,7.6,user12doe12@gmail.com,Time for LoST,3.38999986649
+CPU,10.1,user12doe12@gmail.com,Time for Volunteers,3.70899987221
+CPU,8.9,user13doe13@gmail.com,Time for LoST,3.44600009918
+CPU,8.6,user13doe13@gmail.com,Time for Volunteers,3.76600003242
+CPU,7.9,user14doe14@gmail.com,Time for LoST,3.39400005341
+CPU,14.1,user14doe14@gmail.com,Time for Volunteers,3.74399995804
+CPU,7.6,user15doe15@gmail.com,Time for LoST,3.39100003242
+CPU,12.9,user15doe15@gmail.com,Time for Volunteers,3.72399997711
+CPU,8.9,user16doe16@gmail.com,Time for LoST,3.43700003624
+CPU,3.8,user16doe16@gmail.com,Time for Volunteers,3.7539999485
+CPU,8.0,user17doe17@gmail.com,Time for LoST,3.39900016785
+CPU,0.0,user17doe17@gmail.com,Time for Volunteers,3.71900010109
+CPU,7.7,user18doe18@gmail.com,Time for LoST,3.40999984741
+CPU,16.9,user18doe18@gmail.com,Time for Volunteers,3.73399996758
+CPU,8.3,user19doe19@gmail.com,Time for LoST,3.39800000191
+CPU,7.0,user19doe19@gmail.com,Time for Volunteers,3.72900009155
+CPU,9.2,user20doe20@gmail.com,Time for LoST,3.38700008392
+CPU,25.3,user20doe20@gmail.com,Time for Volunteers,3.72900009155
+CPU,8.8,user21doe21@gmail.com,Time for LoST,3.40299987793
+CPU,11.1,user21doe21@gmail.com,Time for Volunteers,3.79799985886
+CPU,8.6,user22doe22@gmail.com,Time for LoST,3.38199996948
+CPU,6.6,user22doe22@gmail.com,Time for Volunteers,3.7619998455
+CPU,7.7,user23doe23@gmail.com,Time for LoST,3.38599991798
+CPU,19.2,user23doe23@gmail.com,Time for Volunteers,3.71799993515
+CPU,7.9,user24doe24@gmail.com,Time for LoST,3.41000008583
+CPU,0.0,user24doe24@gmail.com,Time for Volunteers,3.73200011253
+CPU,8.1,user25doe25@gmail.com,Time for LoST,3.45899987221
+CPU,17.4,user25doe25@gmail.com,Time for Volunteers,3.77499985695
+CPU,8.4,user26doe26@gmail.com,Time for LoST,3.39800000191
+CPU,3.0,user26doe26@gmail.com,Time for Volunteers,3.74399995804
+CPU,8.7,user27doe27@gmail.com,Time for LoST,3.41500020027
+CPU,2.4,user27doe27@gmail.com,Time for Volunteers,3.76900005341
+CPU,7.7,user28doe28@gmail.com,Time for LoST,3.41000008583
+CPU,0.0,user28doe28@gmail.com,Time for Volunteers,3.73399996758
+CPU,12.3,user29doe29@gmail.com,Time for LoST,3.41600012779
+CPU,3.0,user29doe29@gmail.com,Time for Volunteers,3.73500013351
+CPU,11.1,user30doe30@gmail.com,Time for LoST,3.43799996376
+CPU,22.0,user30doe30@gmail.com,Time for Volunteers,3.75300002098
+CPU,7.3,user31doe31@gmail.com,Time for LoST,3.39700007439
+CPU,8.9,user31doe31@gmail.com,Time for Volunteers,3.71799993515
+CPU,9.2,user32doe32@gmail.com,Time for LoST,3.44000005722
+CPU,20.6,user32doe32@gmail.com,Time for Volunteers,3.75600004196
+CPU,5.6,user33doe33@gmail.com,Time for LoST,3.42100000381
+CPU,17.2,user33doe33@gmail.com,Time for Volunteers,3.73699998856
+CPU,7.3,user34doe34@gmail.com,Time for LoST,3.45700001717
+CPU,17.6,user34doe34@gmail.com,Time for Volunteers,3.77600002289
+CPU,8.0,user35doe35@gmail.com,Time for LoST,3.42100000381
+CPU,7.7,user35doe35@gmail.com,Time for Volunteers,3.73699998856
+CPU,7.8,user36doe36@gmail.com,Time for LoST,3.44999980927
+CPU,1.5,user36doe36@gmail.com,Time for Volunteers,3.75499987602
+CPU,8.3,user37doe37@gmail.com,Time for LoST,3.41000008583
+CPU,25.0,user37doe37@gmail.com,Time for Volunteers,3.75300002098
+CPU,8.4,user38doe38@gmail.com,Time for LoST,3.39800000191
+CPU,5.9,user38doe38@gmail.com,Time for Volunteers,3.75100016594
+CPU,7.8,user39doe39@gmail.com,Time for LoST,3.44400000572
+CPU,4.5,user39doe39@gmail.com,Time for Volunteers,3.73600006104
+CPU,10.1,user40doe40@gmail.com,Time for LoST,3.43400001526
+CPU,13.5,user40doe40@gmail.com,Time for Volunteers,3.72099995613
+CPU,7.7,user41doe41@gmail.com,Time for LoST,3.40100002289
+CPU,20.7,user41doe41@gmail.com,Time for Volunteers,3.72900009155
+CPU,6.6,user42doe42@gmail.com,Time for LoST,3.41299986839
+CPU,6.6,user42doe42@gmail.com,Time for Volunteers,3.73300004005
+CPU,10.4,user43doe43@gmail.com,Time for LoST,3.44000005722
+CPU,4.5,user43doe43@gmail.com,Time for Volunteers,3.75600004196
+CPU,8.5,user44doe44@gmail.com,Time for LoST,3.37199997902
+CPU,38.5,user44doe44@gmail.com,Time for Volunteers,3.742000103
+CPU,7.8,user45doe45@gmail.com,Time for LoST,3.38899993896
+CPU,10.1,user45doe45@gmail.com,Time for Volunteers,3.79999995232
+CPU,9.7,user46doe46@gmail.com,Time for LoST,3.40799999237
+CPU,3.4,user46doe46@gmail.com,Time for Volunteers,3.73399996758
+CPU,7.5,user47doe47@gmail.com,Time for LoST,3.39199995995
+CPU,16.3,user47doe47@gmail.com,Time for Volunteers,3.71300005913
+CPU,9.1,user48doe48@gmail.com,Time for LoST,3.41000008583
+CPU,3.4,user48doe48@gmail.com,Time for Volunteers,3.73200011253
+CPU,9.0,user49doe49@gmail.com,Time for LoST,3.39399981499
+CPU,5.2,user49doe49@gmail.com,Time for Volunteers,3.72799992561
+CPU,8.9,user50doe50@gmail.com,Time for LoST,3.47300004959
+CPU,0.0,user50doe50@gmail.com,Time for Volunteers,3.71200013161
+CPU,9.1,user51doe51@gmail.com,Time for LoST,3.40200018883
+CPU,3.8,user51doe51@gmail.com,Time for Volunteers,3.71800017357
+CPU,8.7,user52doe52@gmail.com,Time for LoST,3.40599989891
+CPU,14.7,user52doe52@gmail.com,Time for Volunteers,3.73000001907
+CPU,6.4,user53doe53@gmail.com,Time for LoST,3.39800000191
+CPU,18.6,user53doe53@gmail.com,Time for Volunteers,3.71099996567
+CPU,7.8,user54doe54@gmail.com,Time for LoST,3.39099979401
+CPU,13.5,user54doe54@gmail.com,Time for Volunteers,3.72299981117
+CPU,9.5,user55doe55@gmail.com,Time for LoST,3.38800001144
+CPU,20.0,user55doe55@gmail.com,Time for Volunteers,3.71099996567
+CPU,5.8,user56doe56@gmail.com,Time for LoST,3.39600014687
+CPU,11.7,user56doe56@gmail.com,Time for Volunteers,3.71399998665
+CPU,8.4,user57doe57@gmail.com,Time for LoST,3.40499997139
+CPU,0.0,user57doe57@gmail.com,Time for Volunteers,3.71799993515
+CPU,8.6,user58doe58@gmail.com,Time for LoST,3.38700008392
+CPU,17.9,user58doe58@gmail.com,Time for Volunteers,3.72099995613
+CPU,8.4,user59doe59@gmail.com,Time for LoST,3.40000009537
+CPU,7.7,user59doe59@gmail.com,Time for Volunteers,3.72000002861
+CPU,9.4,user60doe60@gmail.com,Time for LoST,3.39400005341
+CPU,4.0,user60doe60@gmail.com,Time for Volunteers,3.71300005913
+CPU,8.3,user61doe61@gmail.com,Time for LoST,3.51099991798
+CPU,5.9,user61doe61@gmail.com,Time for Volunteers,3.82899999619
+CPU,9.0,user62doe62@gmail.com,Time for LoST,3.37700009346
+CPU,14.5,user62doe62@gmail.com,Time for Volunteers,3.71900010109
+CPU,6.0,user63doe63@gmail.com,Time for LoST,3.40599989891
+CPU,17.9,user63doe63@gmail.com,Time for Volunteers,3.72399997711
+CPU,8.2,user64doe64@gmail.com,Time for LoST,3.39100003242
+CPU,7.0,user64doe64@gmail.com,Time for Volunteers,3.75600004196
+CPU,8.7,user65doe65@gmail.com,Time for LoST,3.38899993896
+CPU,5.9,user65doe65@gmail.com,Time for Volunteers,3.70799994469
+CPU,9.1,user66doe66@gmail.com,Time for LoST,3.375
+CPU,20.6,user66doe66@gmail.com,Time for Volunteers,3.70199990273
+CPU,22.0,user67doe67@gmail.com,Time for LoST,3.38400006294
+CPU,23.8,user67doe67@gmail.com,Time for Volunteers,3.71900010109
+CPU,10.4,user68doe68@gmail.com,Time for LoST,3.39400005341
+CPU,28.2,user68doe68@gmail.com,Time for Volunteers,3.78900003433

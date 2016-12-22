@@ -4,23 +4,19 @@ from flask.exthook import ExtDeprecationWarning
 import warnings
 from tofile import write_file
 from base64 import b16encode
+from flask import Flask, request, json, render_template, redirect
+import requests,  logging
+from flask_mongoengine import MongoEngine
+import os, sys
+from datetime import datetime, timedelta
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
-from flask import Flask, request, json, render_template, redirect
-import requests
-from flask_mongoengine import MongoEngine
-import os, datetime
-from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-scheduler = BackgroundScheduler(executors={
-    'default': ThreadPoolExecutor(15),
-    'processpool': ProcessPoolExecutor(13)
-}, job_defaults={
-    'coalesce': True,
-    'max_instances': 10
-})
+logging.basicConfig()
+
+scheduler = BackgroundScheduler()
 
 app = Flask(__name__)
 wf = write_file(app.root_path)
@@ -39,11 +35,12 @@ app.config['MONGODB_PASSWORD'] = 'spacegr'
 # Create database connection object
 db = MongoEngine(app)
 
-g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAAyeOvQsvoNanKXf2MS8PmiHKDK-xOdVg'
+g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAZ_-UKmV6eA101o9tfByuN5nLf6nwQVrg'
 times = 3
 state = 'IN'
 LogFile = []
 time_stamp = 0
+
 
 class positioning_settings(db.Document):
     profiling_service_ip = db.StringField(default='127.0.0.1', max_length=100)
@@ -63,13 +60,25 @@ sl_ip = positioning_settings.objects.first().service_logic_ip
 sl_port = positioning_settings.objects.first().service_logic_port
 
 
+def init_schedulers():
+    url = sys.argv[1] if len(sys.argv) > 1 else 'sqlite:///' + app.root_path + '\example.sqlite'
+    scheduler.add_jobstore('sqlalchemy', url=url)
+    print('To clear the alarms, delete the example.sqlite file.')
+    print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
+    try:
+        scheduler.start()
+    except (KeyboardInterrupt, SystemExit):
+        pass
+
+
+
 def define_position(rssi, cell, user, ip):
     global times, state
     if rssi < -95:
         times += 1
         if times > 3:
             print(user, rssi, 'User is outside the House')  # user is unsafe after 3 times
-            wf.outputFile(user + ' ', str(datetime.datetime.now()))
+            wf.outputFile(user + ' ', str(datetime.now()))
             LogFile.append(str(rssi) + 'User is outside the House  ')
             state = 'OUT'
             location = acquire_position(cell)  # get location from Google
@@ -187,10 +196,8 @@ def positioning():
     celldata = dataDict['cellular']
     # print(json.dumps(celldata))
     # define_position(rssipower, json.dumps(celldata), user, ip)
-    scheduler.add_job(define_position, 'date', next_run_time=datetime.datetime.now(), id=b16encode(os.urandom(16)).decode('utf-8') + user, args=[rssipower, json.dumps(celldata), user, ip],
-                      replace_existing=False)
+    scheduler.add_job(define_position, 'date', run_date=datetime.now(), args=[rssipower, json.dumps(celldata), user, ip])
     # define_position(rssipower, json.dumps(celldata), user, ip)
-
     return ip
 
 
@@ -201,5 +208,5 @@ def get_log():
 
 if __name__ == '__main__':
     # app.run(port=4000)
-    scheduler.start()
+    init_schedulers()
     app.run(host='0.0.0.0', port=8081)

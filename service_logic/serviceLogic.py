@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
-import os, time, datetime
+import os, sys, time, datetime
 import requests, xml.etree.ElementTree as ET
 import warnings
 import logging
 from flask.exthook import ExtDeprecationWarning
 from requests import ConnectionError
-
+from datetime import datetime, timedelta
 from flask import Flask, request, json, render_template, redirect
 from flask_mongoengine import MongoEngine
-from tofile import write_file
+from tofile2 import *
 from base64 import b16encode
-from schedulers import schedulers
+from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 logging.basicConfig()
@@ -26,8 +27,9 @@ app.config['MONGODB_PORT'] = 11495
 app.config['MONGODB_USERNAME'] = 'yannis'
 app.config['MONGODB_PASSWORD'] = 'spacegr'
 
-wf = write_file(app.root_path)
-wf.startFile()
+# wf = write_file(app.root_path)
+# wf.startFile()
+startFile(app.root_path)
 
 # Create database connection object
 db = MongoEngine(app)
@@ -39,7 +41,7 @@ time_for_psap = 0
 LogFile = []
 nearby_volunteers = []
 
-schedulers = schedulers(app.root_path)
+scheduler = BackgroundScheduler()
 
 
 class service_logic_settings(db.Document):
@@ -60,6 +62,17 @@ lost_ip = service_logic_settings.objects.first().lost_server_ip
 lost_port = service_logic_settings.objects.first().lost_server_port
 
 
+def init_schedulers():
+    url = sys.argv[1] if len(sys.argv) > 1 else 'sqlite:///' + app.root_path + '\example.sqlite'
+    scheduler.add_jobstore('sqlalchemy', url=url)
+    print('To clear the alarms, delete the example.sqlite file.')
+    print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
+    try:
+        scheduler.start()
+    except (KeyboardInterrupt, SystemExit):
+        pass
+
+
 def get_full_profile(data):
     full_url = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_full_profile', data)
     fu = full_url.json()
@@ -78,8 +91,7 @@ def get_nearby_users(data):
     nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
     nearby_volunteers = nearby_users.json()
     # print ('1111111111111111111', nearby_users.json(), '222222', nearby_volunteers)
-    # scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
-    #                   id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    scheduler.add_job(outputFile, 'date', next_run_time=datetime.now(), args=[app.root_path, json.loads(data)['user'] + ',' + 'Time for Volunteers', (str(time.time() - time_started))])
     # wf.outputFile(json.loads(data)['user'] + ',' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
     print ('Volunteers:' + os.linesep)
     for i in nearby_volunteers:
@@ -117,7 +129,7 @@ def create_lost_request(data):
     data = lost_responce.text
     # lost_data = ET.fromstring(data)
     # print(lost_data[0][3].text)
-    logging.debug('lost data: ', data)
+    print ('lost data: ', data)
     # print('posted to lost server' + os.linesep)
     # print('PSAP: ', lost_data[0][3].text)
     # print('Emergency Number:', lost_data[0][4].text, os.linesep)
@@ -125,8 +137,7 @@ def create_lost_request(data):
     # logging.debug('PSAP: ', lost_data[0][3].text)
     # logging.debug('Emergency Number: ', lost_data[0][4].text, os.linesep)
 
-    # scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
-    #                   id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    scheduler.add_job(outputFile, 'date', next_run_time=datetime.now(), args=[app.root_path, dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)])
     # wf.outputFile(dataDict['user'] + ',' + 'Time for LoST ', str(time.time() - time_started) + 'seconds')
 
     # LogFile.append('posted to lost server')
@@ -170,12 +181,12 @@ def service_logic():
     data = request.data
     time_started = json.loads(data)['time_stamp']
     print (time_started)
-    schedulers.scheduler1.add_job(test_job, 'date', next_run=datetime.datetime.now() + datetime.timedelta(seconds=1), args=[datetime.datetime.now()])
+    # scheduler.add_job(test_job, 'date', run_date=datetime.now(), args=[datetime.now()])
     # fp = get_full_profile(data)
     # lp = get_limited_profile(data)
     # nu = get_nearby_users(data)   # Getting nearby volunteers
-    # scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
-    # scheduler.add_job(create_lost_request, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    scheduler.add_job(get_nearby_users, 'date', run_date=datetime.now(), args=[data])
+    scheduler.add_job(create_lost_request, 'date', run_date=datetime.now() + timedelta(seconds=1), args=[data])
     # create_lost_request(data)
     # print(fp)
     # print(lp)
@@ -209,7 +220,6 @@ def get_log():
 
 
 if __name__ == '__main__':
-    # app.secret_key = 'super secret key'
-    # app.run(debug=True, port=5000)
-    schedulers.scheduler1.start()
+    # global scheduler
+    init_schedulers()
     app.run(host='0.0.0.0', port=8082)

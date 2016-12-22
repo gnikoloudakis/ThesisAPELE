@@ -4,7 +4,10 @@
     <list default="true" id="97f79458-d2a0-435a-8ba8-b48e48dd8541" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/logs/log.txt" afterPath="$PROJECT_DIR$/../service_logic/logs/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/requirements.txt" afterPath="$PROJECT_DIR$/../service_logic/requirements.txt" />
     </list>
     <ignored path="positioning_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,7 +90,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="916" />
+    <option name="x" value="926" />
+    <option name="y" value="2" />
     <option name="width" value="989" />
     <option name="height" value="1034" />
   </component>
@@ -663,7 +667,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="916" y="0" width="989" height="1034" extended-state="0" />
+    <frame x="926" y="2" width="989" height="1034" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17653391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

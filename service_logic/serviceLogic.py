@@ -5,13 +5,12 @@ import warnings
 import logging
 from flask.exthook import ExtDeprecationWarning
 from requests import ConnectionError
-from apscheduler.schedulers.background import BackgroundScheduler
-# from Backgroundsceduler import scheduler
+
 from flask import Flask, request, json, render_template, redirect
 from flask_mongoengine import MongoEngine
 from tofile import write_file
 from base64 import b16encode
-from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
+from schedulers import schedulers
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 logging.basicConfig()
@@ -27,14 +26,6 @@ app.config['MONGODB_PORT'] = 11495
 app.config['MONGODB_USERNAME'] = 'yannis'
 app.config['MONGODB_PASSWORD'] = 'spacegr'
 
-scheduler = BackgroundScheduler(executors={
-    'default': ThreadPoolExecutor(20),
-    'processpool': ProcessPoolExecutor(20)
-}, job_defaults={
-    'coalesce': True,
-    'max_instances': 10
-})
-
 wf = write_file(app.root_path)
 wf.startFile()
 
@@ -47,6 +38,8 @@ time_for_psap = 0
 
 LogFile = []
 nearby_volunteers = []
+
+schedulers = schedulers(app.root_path)
 
 
 class service_logic_settings(db.Document):
@@ -85,8 +78,8 @@ def get_nearby_users(data):
     nearby_users = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_nearby_volunteers', data)
     nearby_volunteers = nearby_users.json()
     # print ('1111111111111111111', nearby_users.json(), '222222', nearby_volunteers)
-    scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
-                      id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[json.loads(data)['user'] + ',' + 'Time for Volunteers', str(time.time() - time_started)],
+    #                   id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     # wf.outputFile(json.loads(data)['user'] + ',' + 'Time for Volunteers ', str(time.time() - time_started) + 'seconds')
     print ('Volunteers:' + os.linesep)
     for i in nearby_volunteers:
@@ -118,7 +111,7 @@ def create_lost_request(data):
     headers = {'Content-Type': 'text/plain'}
     # try:
     lost_responce = requests.post('http://' + lost_ip + ':' + lost_port + '/lost/lost', data=lost_request, headers=headers)
-        # print(lost_request)
+    # print(lost_request)
     # except ConnectionError as e:
     #     print(e)
     data = lost_responce.text
@@ -132,8 +125,8 @@ def create_lost_request(data):
     # logging.debug('PSAP: ', lost_data[0][3].text)
     # logging.debug('Emergency Number: ', lost_data[0][4].text, os.linesep)
 
-    scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
-                      id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # scheduler.add_job(wf.outputFile, 'date', next_run_time=datetime.datetime.now(), args=[dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)],
+    #                   id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     # wf.outputFile(dataDict['user'] + ',' + 'Time for LoST ', str(time.time() - time_started) + 'seconds')
 
     # LogFile.append('posted to lost server')
@@ -167,17 +160,22 @@ def save_all():
     return redirect('/logic')
 
 
+def test_job(data):
+    print (data)
+
+
 @app.route('/logic/service/service_logic', methods=['POST'])
 def service_logic():
     global time_started
     data = request.data
     time_started = json.loads(data)['time_stamp']
     print (time_started)
+    schedulers.scheduler1.add_job(test_job, 'date', next_run=datetime.datetime.now() + datetime.timedelta(seconds=1), args=[datetime.datetime.now()])
     # fp = get_full_profile(data)
     # lp = get_limited_profile(data)
     # nu = get_nearby_users(data)   # Getting nearby volunteers
-    scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
-    scheduler.add_job(create_lost_request, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # scheduler.add_job(get_nearby_users, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
+    # scheduler.add_job(create_lost_request, 'date', next_run_time=datetime.datetime.now(), args=[data], id=b16encode(os.urandom(16)).decode('utf-8'), replace_existing=False)
     # create_lost_request(data)
     # print(fp)
     # print(lp)
@@ -213,5 +211,5 @@ def get_log():
 if __name__ == '__main__':
     # app.secret_key = 'super secret key'
     # app.run(debug=True, port=5000)
-    scheduler.start()
+    schedulers.scheduler1.start()
     app.run(host='0.0.0.0', port=8082)

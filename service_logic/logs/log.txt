@@ -372,3 +372,12 @@ CPU,13.6,user71doe71@gmail.com,Time for LoST,3.41100001335
 CPU,44.3,user71doe71@gmail.com,Time for Volunteers,3.74499988556
 CPU,16.0,user72doe72@gmail.com,Time for LoST,3.47699999809
 CPU,42.9,user72doe72@gmail.com,Time for Volunteers,3.82500004768
+CPU,28.1,user73doe73@gmail.com,Time for LoST,3.46799993515
+CPU,86.2,user73doe73@gmail.com,Time for Volunteers,3.78399991989
+CPU,14.5,user74doe74@gmail.com,Time for LoST,3.6400001049
+CPU,8.9,user74doe74@gmail.com,Time for Volunteers,3.95100021362
+CPU,15.5,user75doe75@gmail.com,Time for LoST,3.38899993896
+CPU,7.2,user75doe75@gmail.com,Time for Volunteers,3.71000003815
+CPU,32.2,user76doe76@gmail.com,Time for LoST,3.45600008965
+CPU,23.2,user76doe76@gmail.com,Time for Volunteers,3.77699995041
+CPU,20.0,user77doe77@gmail.com,Time for LoST,3.40799999237

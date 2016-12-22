@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f79458-d2a0-435a-8ba8-b48e48dd8541" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../service_logic/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../service_logic/tofile2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/positioning_service.py" afterPath="$PROJECT_DIR$/positioning_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/logs/log.txt" afterPath="$PROJECT_DIR$/../service_logic/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
     </list>
     <ignored path="positioning_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -659,12 +652,19 @@
       <option name="project" value="LOCAL" />
       <updated>1482328533519</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="15/15/2016 updated testing snd evaluation scripts">
+      <created>1482419302025</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1482419302025</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="916" y="0" width="989" height="1034" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17653391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

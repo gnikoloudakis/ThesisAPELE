@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tofile2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/logs/log.txt" afterPath="$PROJECT_DIR$/../positioning_service/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/positioning_service.py" afterPath="$PROJECT_DIR$/../positioning_service/positioning_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" afterPath="$PROJECT_DIR$/../positioning_service/templates/Layout/IndexLayout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceLogic.py" afterPath="$PROJECT_DIR$/serviceLogic.py" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -822,7 +817,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="933" height="1050" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2325315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

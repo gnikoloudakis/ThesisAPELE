@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
-import os, sys, time, datetime
-import requests, xml.etree.ElementTree as ET
-import warnings
+import datetime
 import logging
-from flask.exthook import ExtDeprecationWarning
-from requests import ConnectionError
+import sys
+import time
+import warnings
 from datetime import datetime, timedelta
-from flask import Flask, request, json, render_template, redirect
-from flask_mongoengine import MongoEngine
-from tofile2 import *
-from base64 import b16encode
-from apscheduler.schedulers.blocking import BlockingScheduler
+
+import requests
 from apscheduler.schedulers.background import BackgroundScheduler
+from flask import Flask, request, json, render_template, redirect
+from flask.exthook import ExtDeprecationWarning
+from flask_mongoengine import MongoEngine
+
+from tofile2 import *
 
 warnings.simplefilter("ignore", category=ExtDeprecationWarning)
 logging.basicConfig()
@@ -63,7 +64,7 @@ lost_port = service_logic_settings.objects.first().lost_server_port
 
 
 def init_schedulers():
-    url = sys.argv[1] if len(sys.argv) > 1 else 'sqlite:///' + app.root_path + '\example.sqlite'
+    url = sys.argv[1] if len(sys.argv) > 1 else 'sqlite:///' + app.root_path + os.sep + 'example.sqlite'
     scheduler.add_jobstore('sqlalchemy', url=url)
     print('To clear the alarms, delete the example.sqlite file.')
     print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))

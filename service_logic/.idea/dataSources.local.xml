@@ -3,7 +3,9 @@
   <component name="dataSourceStorageLocal">
     <data-source name="example.sqlite" uuid="29fcb94d-a201-49d6-9470-b9866aec7c6f">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <secret-storage>memory</secret-storage>
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
     </data-source>
   </component>
 </project>

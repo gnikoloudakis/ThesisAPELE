@@ -5,7 +5,7 @@ import warnings
 from tofile import write_file
 from base64 import b16encode
 from flask import Flask, request, json, render_template, redirect
-import requests,  logging
+import requests, logging
 from flask_mongoengine import MongoEngine
 import os, sys
 from datetime import datetime, timedelta
@@ -35,18 +35,13 @@ app.config['MONGODB_PASSWORD'] = 'spacegr'
 # Create database connection object
 db = MongoEngine(app)
 
-g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAZ_-UKmV6eA101o9tfByuN5nLf6nwQVrg'
-times = 3
-state = 'IN'
-LogFile = []
-time_stamp = 0
-
 
 class positioning_settings(db.Document):
     profiling_service_ip = db.StringField(default='127.0.0.1', max_length=100)
     profiling_service_port = db.StringField(default='8080', max_length=10)
     service_logic_ip = db.StringField(default='127.0.0.1', max_length=100)
     service_logic_port = db.StringField(default='5000', max_length=10)
+    google_api_key = db.StringField()
 
     def __str__(self):
         return self.profiling_service_ip
@@ -58,6 +53,13 @@ pr_srvc_ip = positioning_settings.objects.first().profiling_service_ip
 pr_srvc_port = positioning_settings.objects.first().profiling_service_port
 sl_ip = positioning_settings.objects.first().service_logic_ip
 sl_port = positioning_settings.objects.first().service_logic_port
+gkey = positioning_settings.objects.first().google_api_key
+
+g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + gkey
+times = 3
+state = 'IN'
+LogFile = []
+time_stamp = 0
 
 
 def init_schedulers():
@@ -69,7 +71,6 @@ def init_schedulers():
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):
         pass
-
 
 
 def define_position(rssi, cell, user, ip):
@@ -172,11 +173,15 @@ def save_all():
     sl_ip = request.form['logic_ip']
     global sl_port
     sl_port = request.form['logic_port']
+    global gkey
+    gkey = request.form['gkey']
+
     settings = positioning_settings.objects.first()
     settings.update(set__profiling_service_ip=pr_srvc_ip,
                     set__profiling_service_port=pr_srvc_port,
                     set__service_logic_ip=sl_ip,
-                    set__service_logic_port=sl_port)
+                    set__service_logic_port=sl_port,
+                    set__google_api_key=gkey)
 
     return redirect('/positioning')
 

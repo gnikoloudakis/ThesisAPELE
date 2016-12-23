@@ -50,6 +50,7 @@ class service_logic_settings(db.Document):
     lost_server_ip = db.StringField(default='10.0.3.86', max_length=100)
     lost_server_port = db.StringField(default='8080', max_length=10)
 
+
     def __str__(self):
         return self.profiling_service_ip
 
@@ -60,6 +61,7 @@ pr_srvc_ip = service_logic_settings.objects.first().profiling_service_ip
 pr_srvc_port = service_logic_settings.objects.first().profiling_service_port
 lost_ip = service_logic_settings.objects.first().lost_server_ip
 lost_port = service_logic_settings.objects.first().lost_server_port
+
 
 
 def init_schedulers():

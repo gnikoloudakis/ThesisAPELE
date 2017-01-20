@@ -6,7 +6,7 @@ import time
 import warnings
 from datetime import datetime, timedelta
 from xml.etree import ElementTree as etree
-
+import ipgetter
 import requests
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Flask, request, json, render_template, redirect
@@ -164,7 +164,7 @@ def sendSIP(recipient, profile):
         "message": "the User " + profile['first_name'] + " " + profile['last_name']
                    + " is lost and foud near you. "
                    + " But bare in mind that the " + profile['first_response_info']
-                   + ". A web page with further info is : " + "http://" + pr_srvc_ip + ":" + pr_srvc_port + "/amberalert/" + profile['email']
+                   + ". A web page with further info is : " + "http://" + ipgetter.myip() + ":" + pr_srvc_port + "/amberalert/" + profile['email']
     }
     requests.post("http://" + sip_proxy + ":" + "9090", data=json.dumps(dataq))
     # print dataq

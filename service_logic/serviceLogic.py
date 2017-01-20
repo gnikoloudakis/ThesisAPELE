@@ -50,7 +50,10 @@ class service_logic_settings(db.Document):
     profiling_service_port = db.StringField(default='8080', max_length=10)
     lost_server_ip = db.StringField(default='10.0.3.86', max_length=100)
     lost_server_port = db.StringField(default='8080', max_length=10)
-
+    sip_proxy = db.StringField(max_length=100)
+    sip_username = db.StringField(max_length=100)
+    sip_password = db.StringField(max_length=100)
+    volunteer = db.StringField(max_length=100)
 
     def __str__(self):
         return self.profiling_service_ip
@@ -62,7 +65,10 @@ pr_srvc_ip = service_logic_settings.objects.first().profiling_service_ip
 pr_srvc_port = service_logic_settings.objects.first().profiling_service_port
 lost_ip = service_logic_settings.objects.first().lost_server_ip
 lost_port = service_logic_settings.objects.first().lost_server_port
-
+sip_proxy = service_logic_settings.objects.first().sip_proxy
+sip_username = service_logic_settings.objects.first().sip_username
+sip_password = service_logic_settings.objects.first().sip_password
+volunteer = service_logic_settings.objects.first().volunteer
 
 
 def init_schedulers():
@@ -148,6 +154,15 @@ def create_lost_request(data):
     # LogFile.append('Emergency Number:' + lost_data[0][4].text)
 
 
+def sendSIP(recipient, profile):
+    global sip_proxy
+    dataq = {
+        "recipient": recipient,
+        "message": json.dumps(profile)
+    }
+    requests.post('http://' + sip_proxy + '9090', data=dataq)
+
+
 @app.route('/logic')
 def service_logic_index():
     settings = service_logic_settings.objects.first()
@@ -164,12 +179,24 @@ def save_all():
     lost_ip = request.form['lost_ip']
     global lost_port
     lost_port = request.form['lost_port']
+    global sip_proxy
+    sip_proxy = request.form['proxy']
+    global sip_username
+    sip_username = request.form['sip_un']
+    global sip_password
+    sip_password = request.form['sip_pw']
+    global volunteer
+    volunteer = request.form['volunteer']
 
     settings = service_logic_settings.objects.first()
     settings.update(set__profiling_service_ip=pr_srvc_ip,
                     set__profiling_service_port=pr_srvc_port,
                     set__lost_server_ip=lost_ip,
-                    set__lost_server_port=lost_port)
+                    set__lost_server_port=lost_port,
+                    set__sip_proxy=sip_proxy,
+                    set__sip_username=sip_username,
+                    set__sip_password=sip_password,
+                    set__volunteer=volunteer)
 
     return redirect('/logic')
 
@@ -185,11 +212,13 @@ def service_logic():
     time_started = json.loads(data)['time_stamp']
     print (time_started)
     # scheduler.add_job(test_job, 'date', run_date=datetime.now(), args=[datetime.now()])
-    # fp = get_full_profile(data)
+    fp = get_full_profile(data)
     # lp = get_limited_profile(data)
     # nu = get_nearby_users(data)   # Getting nearby volunteers
     scheduler.add_job(get_nearby_users, 'date', run_date=datetime.now(), args=[data])
     scheduler.add_job(create_lost_request, 'date', run_date=datetime.now() + timedelta(seconds=1), args=[data])
+    global volunteer
+    sendSIP(volunteer, json.loads(fp))
     # create_lost_request(data)
     # print(fp)
     # print(lp)

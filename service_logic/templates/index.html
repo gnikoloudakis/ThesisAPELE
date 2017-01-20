@@ -36,6 +36,18 @@
             <label for="port2">Lost Server Port:</label>
             <input type="text" class="form-control" id="port2" value="{{ settings.lost_server_port }}" name="lost_port">
             <br>
+            <label for="proxy">SIP proxy:</label>
+            <input type="text" class="form-control" id="proxy" value="{{ settings.sip_proxy }}" name="proxy">
+            <br>
+            <label for="sip_un">SIP Username:</label>
+            <input type="text" class="form-control" id="sip_un" value="{{ settings.sip_username }}" name="sip_un">
+            <br>
+            <label for="sip_pw">SIP Password:</label>
+            <input type="password" class="form-control" id="sip_pw" value="{{ settings.sip_password }}" name="sip_pw">
+            <br>
+            <label for="psap">Volunteer#1:</label>
+            <input type="text" class="form-control" id="volunteer" value="{{ settings.volunteer }}" name="volunteer">
+            <br>
 
             <button class="btn btn-default" type="submit" id="export-btn">Save All</button>
         </div>

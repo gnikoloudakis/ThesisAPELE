@@ -452,7 +452,7 @@ def get_full_profile():
         "full_url": user.full_url
     }
     print("SENT FULL PROFILE")
-    return json.dumps(full_profile)
+    return json.dumps(user)
 
 
 @app.route('/service/profiling/get_limited_profile', methods=['POST'])

@@ -166,7 +166,7 @@ def sendSIP(recipient, profile):
                    + " But bare in mind that the " + profile['first_response_info']
                    + ". A web page with further info is : " + "http://" + pr_srvc_ip + ":" + pr_srvc_port + "/amberalert/" + profile['email']
     }
-    requests.post('http://' + sip_proxy + '9090', data=dataq)
+    requests.post('http://' + sip_proxy + ':' + '9090', data=dataq)
     # print dataq
 
 

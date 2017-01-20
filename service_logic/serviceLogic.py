@@ -5,6 +5,7 @@ import sys
 import time
 import warnings
 from datetime import datetime, timedelta
+from xml.etree import ElementTree as etree
 
 import requests
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -137,14 +138,16 @@ def create_lost_request(data):
     #     print(e)
     data = lost_responce.text
     # lost_data = ET.fromstring(data)
-    # print(lost_data[0][3].text)
-    print ('lost data: ', data)
-    # print('posted to lost server' + os.linesep)
-    # print('PSAP: ', lost_data[0][3].text)
-    # print('Emergency Number:', lost_data[0][4].text, os.linesep)
-    # logging.debug('posted to lost server' + os.linesep)
-    # logging.debug('PSAP: ', lost_data[0][3].text)
-    # logging.debug('Emergency Number: ', lost_data[0][4].text, os.linesep)
+    lost_data = etree.fromstring(data)
+    # print etree.tostring(lost_data)
+    print(lost_data[0][3].text)
+    # print ('lost data: ', data)
+    print('posted to lost server' + os.linesep)
+    print('PSAP: ', lost_data[0][3].text)
+    print('Emergency Number:', lost_data[0][4].text, os.linesep)
+    logging.debug('posted to lost server' + os.linesep)
+    logging.debug('PSAP: ', lost_data[0][3].text)
+    logging.debug('Emergency Number: ', lost_data[0][4].text, os.linesep)
 
     scheduler.add_job(outputFile, 'date', next_run_time=datetime.now(), args=[app.root_path, dataDict['user'] + ',' + 'Time for LoST', str(time.time() - time_started)])
     # wf.outputFile(dataDict['user'] + ',' + 'Time for LoST ', str(time.time() - time_started) + 'seconds')
@@ -155,12 +158,16 @@ def create_lost_request(data):
 
 
 def sendSIP(recipient, profile):
-    global sip_proxy
+    global sip_proxy, pr_srvc_ip, pr_srvc_port
     dataq = {
         "recipient": recipient,
-        "message": json.dumps(profile)
+        "message": "the User " + profile['first_name'] + " " + profile['last_name']
+                   + " is lost and foud near you. "
+                   + " But bare in mind that the " + profile['first_response_info']
+                   + ". A web page with further info is : " + "http://" + pr_srvc_ip + ":" + pr_srvc_port + "/amberalert/" + profile['email']
     }
     requests.post('http://' + sip_proxy + '9090', data=dataq)
+    # print dataq
 
 
 @app.route('/logic')
@@ -218,7 +225,7 @@ def service_logic():
     scheduler.add_job(get_nearby_users, 'date', run_date=datetime.now(), args=[data])
     scheduler.add_job(create_lost_request, 'date', run_date=datetime.now() + timedelta(seconds=1), args=[data])
     global volunteer
-    sendSIP(volunteer, json.loads(fp))
+    sendSIP(volunteer, fp)
     # create_lost_request(data)
     # print(fp)
     # print(lp)

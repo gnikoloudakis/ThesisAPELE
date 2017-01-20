@@ -56,7 +56,7 @@ sl_port = positioning_settings.objects.first().service_logic_port
 gkey = positioning_settings.objects.first().google_api_key
 
 g_url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + gkey
-times = 3
+times = 0
 state = 'IN'
 LogFile = []
 time_stamp = 0

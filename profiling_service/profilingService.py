@@ -301,7 +301,7 @@ def search_user():
 
 
 @app.route('/amberalert/<user_email>')
-@login_required
+# @login_required
 def amberalert(user_email):
     alert = Alert.objects
     radius = Settings.objects.first().volunteer_radius

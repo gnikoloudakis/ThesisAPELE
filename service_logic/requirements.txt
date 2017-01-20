@@ -1,3 +1,4 @@
+lxml
 anyjson==0.3.3
 APScheduler==3.3.0
 automium==0.2.6

@@ -4,8 +4,10 @@
     <list default="true" id="fe6957c1-aaa9-4de0-9e4c-f014ff043740" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../profiling_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/profilingService.py" afterPath="$PROJECT_DIR$/../profiling_service/profilingService.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/templates/alerts.html" afterPath="$PROJECT_DIR$/../profiling_service/templates/alerts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../profiling_service/templates/amberalert.html" afterPath="$PROJECT_DIR$/../profiling_service/templates/amberalert.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceLogic.py" afterPath="$PROJECT_DIR$/serviceLogic.py" />
     </list>
     <ignored path="service_logic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +54,7 @@
       <file leaf-file-name="serviceLogic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serviceLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="1054">
               <caret line="149" column="63" lean-forward="false" selection-start-line="149" selection-start-column="63" selection-end-line="149" selection-end-column="63" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
@@ -917,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484915965094</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="16/12/2016 inserted init log route">
+      <created>1484916739813</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1484916739813</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10394456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1392,7 +1401,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serviceLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="1054">
           <caret line="149" column="63" lean-forward="false" selection-start-line="149" selection-start-column="63" selection-end-line="149" selection-end-column="63" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />

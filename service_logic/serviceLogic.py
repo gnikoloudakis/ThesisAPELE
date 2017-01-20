@@ -161,10 +161,7 @@ def sendSIP(recipient, profile):
     global sip_proxy, pr_srvc_ip, pr_srvc_port
     dataq = {
         "recipient": recipient,
-        "message": "the User " + profile['first_name'] + " " + profile['last_name']
-                   + " is lost and foud near you. "
-                   + " But bare in mind that the " + profile['first_response_info']
-                   + ". A web page with further info is : " + "http://" + ipgetter.myip() + ":" + pr_srvc_port + "/amberalert/" + profile['email']
+        "message": "http://" + ipgetter.myip() + ":" + pr_srvc_port + "/amberalert/" + profile['email']
     }
     requests.post("http://" + sip_proxy + ":" + "9090", data=json.dumps(dataq))
     # print dataq

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ea639d1-0fc7-4c78-a187-0001293083fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
     </list>
@@ -35,11 +36,21 @@
       <file leaf-file-name="profilingService.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profilingService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="129" column="8" lean-forward="false" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+            <state relative-caret-position="353">
+              <caret line="303" column="15" lean-forward="true" selection-start-line="303" selection-start-column="15" selection-end-line="303" selection-end-column="15" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="amberalert.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/amberalert.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-207">
+              <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,6 +79,8 @@
       <find>psu</find>
       <find>Last</find>
       <find>url_for</find>
+      <find>requests</find>
+      <find>emer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,12 +96,12 @@
         <option value="$PROJECT_DIR$/profilingService (1).py" />
         <option value="$PROJECT_DIR$/templates/user_full.html" />
         <option value="$PROJECT_DIR$/static/js/maps.js" />
-        <option value="$PROJECT_DIR$/templates/alerts.html" />
-        <option value="$PROJECT_DIR$/templates/amberalert.html" />
         <option value="$PROJECT_DIR$/testing/add_users.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/templates/Layout/IndexLayout.html" />
         <option value="$PROJECT_DIR$/testing/evaluate_system.py" />
+        <option value="$PROJECT_DIR$/templates/amberalert.html" />
+        <option value="$PROJECT_DIR$/templates/alerts.html" />
         <option value="$PROJECT_DIR$/profilingService.py" />
       </list>
     </option>
@@ -100,7 +113,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -146,6 +159,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiling_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiling_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,11 +667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484910581085</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="15/12/2016 updates testing and evaluation scripts">
+      <created>1484917242892</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1484917242892</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -899,20 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/alerts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/amberalert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="36" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/edit_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -1045,10 +1065,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/alerts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="63" column="61" lean-forward="false" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/amberalert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="57" column="57" lean-forward="true" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profilingService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="129" column="8" lean-forward="false" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+        <state relative-caret-position="353">
+          <caret line="303" column="15" lean-forward="true" selection-start-line="303" selection-start-column="15" selection-end-line="303" selection-end-column="15" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>

@@ -191,6 +191,7 @@ def positioning():
     global time_stamp
     LogFile = ' '
     data = request.data
+    print(type(data))
     dataDict = json.loads(data)
     time_stamp = dataDict['time_stamp']
     user = dataDict['user']

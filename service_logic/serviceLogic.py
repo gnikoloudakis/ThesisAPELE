@@ -62,8 +62,7 @@ class service_logic_settings(db.Document):
         return self.profiling_service_ip
 
 
-# pp = service_logic_settings(profiling_service_ip='127.0.0.1')
-# pp.save()
+
 pr_srvc_ip = service_logic_settings.objects.first().profiling_service_ip
 pr_srvc_port = service_logic_settings.objects.first().profiling_service_port
 lost_ip = service_logic_settings.objects.first().lost_server_ip
@@ -162,15 +161,15 @@ def create_lost_request(data):
 
 
 def sendSIP(recipient, profile):
-    global sip_proxy, pr_srvc_ip, pr_srvc_port
+    global sip_proxy, sip_proxy_port, pr_srvc_ip, pr_srvc_port
+    sip_proxy = service_logic_settings.objects.first().sip_proxy
+    sip_proxy_port = service_logic_settings.objects.first().sip_proxy_port
     message = tinyurl.create_one("http://" + ipgetter.myip() + "/amberalert/" + profile['email'])
     dataq = {
         "recipient": recipient,
         "message": message
     }
-    requests.post("http://" + sip_proxy + ":" + "9090", data=json.dumps(dataq))
-    # requests.post("http://" + 83.212.99.200/sipsimple", data=json.dumps(dataq))
-    # print dataq
+    # requests.post("http://" + sip_proxy + ":" + sip_proxy_port + "/sipsimple", data=json.dumps(dataq))
 
 
 @app.route('/logic')

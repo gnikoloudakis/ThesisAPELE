@@ -505,13 +505,6 @@
       <option name="presentableId" value="Default" />
       <updated>1473756910975</updated>
     </task>
-    <task id="LOCAL-00006" summary="1/12/2016 - moved static folder to root folder">
-      <created>1480601850067</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1480601850067</updated>
-    </task>
     <task id="LOCAL-00007" summary="1/12/2016 - f">
       <created>1480608474747</created>
       <option name="number" value="00007" />
@@ -848,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485170640069</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="23 1 2017 a">
+      <created>1485171557408</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1485171557408</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">

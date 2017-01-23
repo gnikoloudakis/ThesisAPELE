@@ -53,6 +53,7 @@ class service_logic_settings(db.Document):
     lost_server_ip = db.StringField(default='10.0.3.86', max_length=100)
     lost_server_port = db.StringField(default='8080', max_length=10)
     sip_proxy = db.StringField(max_length=100)
+    sip_proxy_port = db.StringField(default='9090', max_length=10)
     sip_username = db.StringField(max_length=100)
     sip_password = db.StringField(max_length=100)
     volunteer = db.StringField(max_length=100)
@@ -68,6 +69,7 @@ pr_srvc_port = service_logic_settings.objects.first().profiling_service_port
 lost_ip = service_logic_settings.objects.first().lost_server_ip
 lost_port = service_logic_settings.objects.first().lost_server_port
 sip_proxy = service_logic_settings.objects.first().sip_proxy
+sip_proxy_port = service_logic_settings.objects.first().sip_proxy_port
 sip_username = service_logic_settings.objects.first().sip_username
 sip_password = service_logic_settings.objects.first().sip_password
 volunteer = service_logic_settings.objects.first().volunteer
@@ -85,6 +87,7 @@ def init_schedulers():
 
 
 def get_full_profile(data):
+    global pr_srvc_ip, pr_srvc_port
     full_url = requests.post('http://' + pr_srvc_ip + ':' + pr_srvc_port + '/service/profiling/get_full_profile', data)
     fu = full_url.json()
     return fu
@@ -166,6 +169,7 @@ def sendSIP(recipient, profile):
         "message": message
     }
     requests.post("http://" + sip_proxy + ":" + "9090", data=json.dumps(dataq))
+    # requests.post("http://" + 83.212.99.200/sipsimple", data=json.dumps(dataq))
     # print dataq
 
 
@@ -187,6 +191,8 @@ def save_all():
     lost_port = request.form['lost_port']
     global sip_proxy
     sip_proxy = request.form['proxy']
+    global sip_proxy_port
+    sip_proxy_port = request.form['proxy_port']
     global sip_username
     sip_username = request.form['sip_un']
     global sip_password
@@ -200,6 +206,7 @@ def save_all():
                     set__lost_server_ip=lost_ip,
                     set__lost_server_port=lost_port,
                     set__sip_proxy=sip_proxy,
+                    set__sip_proxy_port=sip_proxy_port,
                     set__sip_username=sip_username,
                     set__sip_password=sip_password,
                     set__volunteer=volunteer)

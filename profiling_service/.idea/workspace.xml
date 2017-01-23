@@ -4,7 +4,7 @@
     <list default="true" id="9ea639d1-0fc7-4c78-a187-0001293083fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../positioning_service/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../service_logic/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/serviceLogic.py" afterPath="$PROJECT_DIR$/../service_logic/serviceLogic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../service_logic/logs/log.txt" afterPath="$PROJECT_DIR$/../service_logic/logs/log.txt" />
     </list>
     <ignored path="profiling_service.iws" />
     <ignored path=".idea/workspace.xml" />

@@ -169,7 +169,7 @@ def sendSIP(recipient, profile):
         "recipient": recipient,
         "message": message
     }
-    # requests.post("http://" + sip_proxy + ":" + sip_proxy_port + "/sipsimple", data=json.dumps(dataq))
+    requests.post("http://" + sip_proxy + ":" + sip_proxy_port + "/sipsimple", data=json.dumps(dataq))
 
 
 @app.route('/logic')

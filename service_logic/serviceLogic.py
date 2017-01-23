@@ -160,7 +160,7 @@ def create_lost_request(data):
 
 def sendSIP(recipient, profile):
     global sip_proxy, pr_srvc_ip, pr_srvc_port
-    message = tinyurl.create_one("http://" + ipgetter.myip() + ":" + pr_srvc_port + "/amberalert/" + profile['email'])
+    message = tinyurl.create_one("http://" + ipgetter.myip() + "/amberalert/" + profile['email'])
     dataq = {
         "recipient": recipient,
         "message": message

@@ -2,6 +2,9 @@
 
 from flask.exthook import ExtDeprecationWarning
 import warnings
+
+from objdict import ObjDict
+
 from tofile import write_file
 from base64 import b16encode
 from flask import Flask, request, json, render_template, redirect
@@ -210,6 +213,17 @@ def positioning():
 @app.route('/positioning/service/get_log', methods=['GET'])
 def get_log():
     return json.dumps(LogFile)
+
+
+@app.route('/positioning/service/test', methods=['POST'])
+def test_positioning():
+    global g_url
+    data = ObjDict(request.data)
+    google_data = {}
+    google_data['cellTowers'] = data.cellular.cellTowers
+    r = requests.post(g_url, data=json.dumps(google_data))  # get location from Google
+    print r.json()
+    return 'ok'
 
 
 if __name__ == '__main__':

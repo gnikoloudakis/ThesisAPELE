@@ -309,11 +309,12 @@ def amberalert(user_email):
     unsafe_user_lng = User.objects(email=unsafe_user_email).first().position['coordinates'][0]
     unsafe_user_lat = User.objects(email=unsafe_user_email).first().position['coordinates'][1]
     # print(user_email)
+    current_user = User.objects(id=session['user_id']).first()
     user = User.objects(email=user_email).first()
     volunteers = User.objects(user_type='volunteer',
                               position__near=[unsafe_user_lng, unsafe_user_lat],
                               position__max_distance=int(radius))
-    return render_template('amberalert.html', user=user, alert=alert, volunteers=volunteers)
+    return render_template('amberalert.html', user=user, alert=alert, volunteers=volunteers, current_user=current_user)
 
 
 @app.route('/change_user/<user_email>')

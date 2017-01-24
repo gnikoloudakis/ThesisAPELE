@@ -39,20 +39,22 @@
         <div id="response" class="collapse">
             <h4><b>{{ user.first_response_info }}</b></h4>
         </div>
-
-        <h4><b>Medical History</b>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#history"><i class="glyphicon glyphicon-plus"></i>
-            </button>
-        </h4>
-        <div id="history" class="collapse">
-            {% for i in user.medical_history %}
-                <h4><b>{{ i.date.date() }}</b></h4>
-                <h5><b>Hospital:</b> {{ i.hospital }}</h5>
-                <h5><b>Doctor:</b> {{ i.doctor }}</h5>
-                <h5><b>Reason:</b> {{ i.reason }}</h5>
-                <h5><b>Outcome:</b> {{ i.outcome }}</h5>
-            {% endfor %}
-        </div>
+        {% if current_user.roles[0].name == 'admin' %}
+{#    {{ current_user.roles[0].name }}#}
+            <h4><b>Medical History</b>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#history"><i class="glyphicon glyphicon-plus"></i>
+                </button>
+            </h4>
+            <div id="history" class="collapse">
+                {% for i in user.medical_history %}
+                    <h4><b>{{ i.date.date() }}</b></h4>
+                    <h5><b>Hospital:</b> {{ i.hospital }}</h5>
+                    <h5><b>Doctor:</b> {{ i.doctor }}</h5>
+                    <h5><b>Reason:</b> {{ i.reason }}</h5>
+                    <h5><b>Outcome:</b> {{ i.outcome }}</h5>
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
     <div class="col-lg-6">
         <h4><b>First Name:</b> {{ user.first_name }}</h4>
@@ -61,7 +63,7 @@
         <h4><b>Current Position:</b> <br>Lat:
             {% if user.position.coordinates %}{{ user.position['coordinates'][1] }}{% else %}35.00{% endif %},<br> Long:
             {% if user.position.coordinates %}{{ user.position['coordinates'][0] }}{% else %}25.00{% endif %}</h4>
-            <h4><b>Accuracy: </b>{{ user.accuracy }}m</h4>
+        <h4><b>Accuracy: </b>{{ user.accuracy }}m</h4>
         <h4><b>Volunteer Radius:</b> 5km</h4>
 
 
@@ -104,56 +106,56 @@
 
 
 {% block javascript %}
-{#    <script>#}
-{##}
-{#        var user_location = [{% if user.position %}{{ user.position['coordinates'][1] }}, {{ user.position['coordinates'][0] }}{% else %}35.00, 25.00{% endif %}];#}
-{#        create_map(user_location);#}
-{#        set_user_marker(user_location, {{ user.accuracy }});#}
-        {#        set_markers({{ aaaa }});#}
-{#    </script>#}
+    {#    <script>#}
+    {##}
+    {#        var user_location = [{% if user.position %}{{ user.position['coordinates'][1] }}, {{ user.position['coordinates'][0] }}{% else %}35.00, 25.00{% endif %}];#}
+    {#        create_map(user_location);#}
+    {#        set_user_marker(user_location, {{ user.accuracy }});#}
+    {#        set_markers({{ aaaa }});#}
+    {#    </script>#}
     <script type="text/javascript">
 
-{#        {% for i in alert %}#}
-{#            {% set rowloop = loop %}#}
-            var unsafe_user = {
-                first: '{{ user.first_name }}',
-                last: '{{ user.last_name }}',
-                email: '{{ user.email }}'
-            };
-            unsafe_user_string = 'First Name: {{ user.first_name }}\n '
-                    + 'Last Name: {{ user.last_name }}\n '
-                    + 'Email: {{ user.email }}'
-                    + 'Accuracy: {{ user.accuracy }}m' ;
+        {#        {% for i in alert %}#}
+        {#            {% set rowloop = loop %}#}
+        var unsafe_user = {
+            first: '{{ user.first_name }}',
+            last: '{{ user.last_name }}',
+            email: '{{ user.email }}'
+        };
+        unsafe_user_string = 'First Name: {{ user.first_name }}\n '
+            + 'Last Name: {{ user.last_name }}\n '
+            + 'Email: {{ user.email }}'
+            + 'Accuracy: {{ user.accuracy }}m';
 
-            $.ajax({
-                type: 'POST',
-                url: '/service/profiling/get_nearby_volunteers_simple',
-                data: unsafe_user,
-                success: function (responce) {
-                    {#                    alert(JSON.parse(responce)[0].email);#}
-                    var nearby_volunteers = JSON.parse(responce);
-                    var volunteer_locations = [];
-                    for (let i = 0; i < nearby_volunteers.length; i++) {
-                        volunteer_locations[i] = new Array(6);
-                        volunteer_locations[i][0] = nearby_volunteers[i].first_name;
-                        volunteer_locations[i][1] = nearby_volunteers[i].last_name;
-                        volunteer_locations[i][2] = nearby_volunteers[i].email;
-                        volunteer_locations[i][3] = nearby_volunteers[i].position['coordinates'][0];//longitude
-                        volunteer_locations[i][4] = nearby_volunteers[i].position['coordinates'][1];//latitude
-{#                        volunteer_locations[i][5] = {{ loop.index }};//latitude#}
-                    }
-{#                    $('#unsafe_user').on('shown.bs.collapse', function (e) {#}
-                        {#                        alert('collapsed');#}
-                        create_multimap(unsafe_user_string, {{ user.position['coordinates'][0] }}, {{ user.position['coordinates'][1] }}, {{ user.accuracy }}, volunteer_locations, 'map');
-{#                    });#}
-
-                },
-                error: function () {
-                    alert('error');
+        $.ajax({
+            type: 'POST',
+            url: '/service/profiling/get_nearby_volunteers_simple',
+            data: unsafe_user,
+            success: function (responce) {
+                {#                    alert(JSON.parse(responce)[0].email);#}
+                var nearby_volunteers = JSON.parse(responce);
+                var volunteer_locations = [];
+                for (let i = 0; i < nearby_volunteers.length; i++) {
+                    volunteer_locations[i] = new Array(6);
+                    volunteer_locations[i][0] = nearby_volunteers[i].first_name;
+                    volunteer_locations[i][1] = nearby_volunteers[i].last_name;
+                    volunteer_locations[i][2] = nearby_volunteers[i].email;
+                    volunteer_locations[i][3] = nearby_volunteers[i].position['coordinates'][0];//longitude
+                    volunteer_locations[i][4] = nearby_volunteers[i].position['coordinates'][1];//latitude
+                    {#                        volunteer_locations[i][5] = {{ loop.index }};//latitude#}
                 }
-            });
+                {#                    $('#unsafe_user').on('shown.bs.collapse', function (e) {#}
+                {#                        alert('collapsed');#}
+                create_multimap(unsafe_user_string, {{ user.position['coordinates'][0] }}, {{ user.position['coordinates'][1] }}, {{ user.accuracy }}, volunteer_locations, 'map');
+                {#                    });#}
 
-{#        {% endfor %}#}
+            },
+            error: function () {
+                alert('error');
+            }
+        });
+
+        {#        {% endfor %}#}
 
     </script>
 

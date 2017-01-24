@@ -104,7 +104,11 @@ def define_position(rssi, cell, user, ip):
 # GET LOCATION FROM GOOGLE API USING CELLULAR DATA
 def acquire_position(data):
     # print('google')
-    r = requests.post(g_url, data=data)  # get location from Google
+    headers = {
+        'content-type': "application/json",
+        'cache-control': "no-cache"
+    }
+    r = requests.post(g_url, data=data, headers=headers)  # get location from Google
     # p = json.loads(r.content)
     p = r.json()
     print("GOT POSITION FROM GOOGLE", p)

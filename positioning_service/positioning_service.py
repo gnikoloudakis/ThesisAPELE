@@ -218,10 +218,12 @@ def get_log():
 @app.route('/positioning/service/test', methods=['POST'])
 def test_positioning():
     global g_url
-    data = ObjDict(request.data)
-    google_data = {}
-    google_data['cellTowers'] = data.cellular.cellTowers
-    r = requests.post(g_url, data=json.dumps(google_data))  # get location from Google
+    request_body = {"cellTowers": []}
+    cell_body = {}
+    data = request.json
+    for i in data['cellTowers']:
+        cell_body.update(i)
+    r = requests.post(g_url, data=json.dumps(cell_body))  # get location from Google
     print r.json()
     return 'ok'
 
